@@ -48,7 +48,7 @@ export function SiteHeader() {
             PB
           </div>
           <div className="leading-tight">
-            <p className="text-sm font-semibold text-slate-900">Dashboard Educação PB</p>
+            <p className="text-sm font-semibold text-slate-900">GESTAR-JP</p>
             <p className="text-xs text-slate-500">Dados em tempo real</p>
           </div>
         </Link>
