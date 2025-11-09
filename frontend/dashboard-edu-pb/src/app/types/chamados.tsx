@@ -1,6 +1,6 @@
 export interface Chamados {
 	id: string;
-	inep: number;
+	inep: string;
 	titulo: string;
 	descricao: string;
 	dataCriacao: string;

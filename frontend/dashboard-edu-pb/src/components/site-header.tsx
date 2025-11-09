@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image"; 
 
 const identityConfigs = [
   {
@@ -43,9 +44,18 @@ export function SiteHeader() {
   return (
     <header className="border-b border-brand-100 bg-surface-muted">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
+        {/* LOGO */}
         <Link href="/" className="flex items-center gap-3" aria-label="Ir para a página inicial">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-600 text-lg font-bold text-white">
-            PB
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-600">
+            {/* ✅ imagem otimizada */}
+            <Image
+              src="/images/logo_gestar_icone_HD.png"
+              alt="Logo GESTAR"
+              width={44}
+              height={44}
+              className="rounded-lg object-contain"
+              priority
+            />
           </div>
           <div className="leading-tight">
             <p className="text-sm font-semibold text-slate-900">GESTAR-JP</p>
@@ -53,6 +63,7 @@ export function SiteHeader() {
           </div>
         </Link>
 
+        {/* IDENTIDADE OU LOGIN */}
         {identity ? (
           <div className="rounded-full border border-brand-100 bg-brand-50 px-5 py-2 text-right shadow-sm">
             <p className="text-sm font-semibold text-brand-700">{identity.title}</p>
