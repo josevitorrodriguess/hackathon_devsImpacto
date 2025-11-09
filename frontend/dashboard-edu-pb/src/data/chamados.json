@@ -1238,5 +1238,15 @@
     "tipo": "Saneamento e Água",
     "prioridade": "Média",
     "dataCriacao": "2024-10-27T10:30:00Z"
+  },
+  {
+    "id": "chamado-mhrplfiy-71q",
+    "inep": 25092570,
+    "status": "Em andamento",
+    "titulo": "Falta de água na escola",
+    "descricao": "Relato de falta de água nas instalações da escola, impactando o uso de banheiros e bebedouros.",
+    "tipo": "Saneamento e Água",
+    "prioridade": "Alta",
+    "dataCriacao": "2024-10-27T10:30:00Z"
   }
 ]

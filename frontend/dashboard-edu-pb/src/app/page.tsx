@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import {
   Bar,
   BarChart,
@@ -15,6 +15,10 @@ import {
 import GlobalMap from "@/components/global-map";
 import chamadosData from "@/data/chamados.json";
 import escolasData from "@/data/escolas.json";
+import indicadorIdeb from "@/data/indicador_ideb.json";
+import indicadorSaeb from "@/data/indicador_saeb_aprendizado.json";
+import indicadorDistorcao from "@/data/indicador_distorcao_idade_serie.json";
+import indicadorRendimento from "@/data/indicador_taxa_rendimento.json";
 
 type Escola = {
   id: string;
@@ -37,7 +41,28 @@ type Chamado = {
 };
 
 const pieColors = ["#ef4444", "#f97316", "#fbbf24", "#10b981", "#3b82f6", "#6366f1"];
-const idebScores = [7.9, 7.7, 7.6, 7.4, 7.3, 7.1, 7.0, 6.9, 6.8, 6.6];
+
+const rankingTabs = [
+  { id: "ideb", label: "IDEB" },
+  { id: "saeb", label: "SAEB adequado" },
+  { id: "distorcao", label: "Menor distorção" },
+  { id: "rendimento", label: "Taxa de aprovação" },
+] as const;
+
+type RankingTab = (typeof rankingTabs)[number]["id"];
+
+type RankingRow = {
+  inep: string;
+  nome: string;
+  value: number;
+};
+
+type RankingDataset = {
+  rows: RankingRow[];
+  description: string;
+  formatter: (value: number) => string;
+};
+
 const MAX_SUGGESTIONS = 6;
 
 const getChamadoSchoolId = (chamado: Chamado) =>
@@ -54,6 +79,7 @@ export default function SecretariaPage() {
   const [selectedSchoolId, setSelectedSchoolId] = useState<string | null>(null);
   const [searchValue, setSearchValue] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const [rankingTab, setRankingTab] = useState<RankingTab>("ideb");
   const blurTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const escolas = useMemo<Escola[]>(() => {
@@ -66,6 +92,23 @@ export default function SecretariaPage() {
         endereco: escola["endereco"],
         codigoINEP: escola["inep"],
       }));
+  }, []);
+
+  const schoolNameLookup = useMemo(() => {
+    const map: Record<string, string> = {};
+    (escolasData as any[]).forEach((escola) => {
+      const raw = escola["inep"] ?? escola["inep_id"] ?? escola["codigoINEP"];
+      if (!raw) return;
+      const key = String(raw).replace(/[^\d]/g, "");
+      if (!key) return;
+      const nome =
+        escola["nome_escola"] ||
+        escola["nome"] ||
+        escola["Nome da escola"] ||
+        `INEP ${key}`;
+      map[key] = nome;
+    });
+    return map;
   }, []);
 
   const chamadosArray = useMemo(() => {
@@ -116,16 +159,158 @@ export default function SecretariaPage() {
     });
   }, [escolas, chamadosCounts]);
 
-  const idebRanking = useMemo(() => {
-    return escolas
-      .slice(0, 10)
-      .map((escola, index) => ({
-        posicao: index + 1,
-        nome: escola.nome,
-        ideb: idebScores[index] ?? 6.5,
+  const rankingData = useMemo<Record<RankingTab, RankingDataset>>(() => {
+    const normalizeInep = (value: unknown) => {
+      if (value == null) return null;
+      const digits = String(value).replace(/[^\d]/g, "");
+      return digits || null;
+    };
+
+    const formatName = (inep: string) => schoolNameLookup[inep] || `INEP ${inep}`;
+
+    const buildTop = (rows: RankingRow[], order: "asc" | "desc" = "desc") => {
+      const sorted = [...rows].sort((a, b) =>
+        order === "desc" ? b.value - a.value : a.value - b.value
+      );
+      return sorted.slice(0, 10);
+    };
+
+    // IDEB
+    const idebEntries = ((indicadorIdeb as any)?.escolas ?? []) as any[];
+    const idebMap = new Map<string, { inep: string; value: number; ano: number; ciclo?: string }>();
+    idebEntries.forEach((entry: any) => {
+      if (typeof entry?.ideb !== "number") return;
+      const inep = normalizeInep(entry.inep_id ?? entry.inep);
+      if (!inep) return;
+      const ano = typeof entry.ano === "number" ? entry.ano : 0;
+      const ciclo = entry.ciclo_id || undefined;
+      const key = `${inep}-${ciclo || "geral"}`;
+      const current = idebMap.get(key);
+      if (!current || ano > current.ano) {
+        idebMap.set(key, { inep, value: entry.ideb, ano, ciclo });
+      }
+    });
+    const idebRows = buildTop(
+      Array.from(idebMap.values()).map((item) => ({
+        inep: item.inep,
+        nome: formatName(item.inep),
+        value: item.value,
       }))
-      .sort((a, b) => b.ideb - a.ideb);
-  }, [escolas]);
+    );
+
+    // SAEB
+    const saebEntries = ((indicadorSaeb as any)?.escolas ?? []) as any[];
+    const saebMap = new Map<string, { inep: string; value: number; ano: number; ciclo?: string }>();
+    saebEntries.forEach((entry: any) => {
+      const inep = normalizeInep(entry.inep_id);
+      if (!inep) return;
+      const metrics = [entry.lp_adequado, entry.mt_adequado].filter(
+        (val: any) => typeof val === "number"
+      );
+      if (!metrics.length) return;
+      const adequado = (metrics.reduce((acc: number, val: number) => acc + val, 0) / metrics.length) * 100;
+      const ano = typeof entry.ano === "number" ? entry.ano : 0;
+      const ciclo = entry.ciclo_id || undefined;
+      const key = `${inep}-${ciclo || "geral"}`;
+      const current = saebMap.get(key);
+      if (!current || ano > current.ano) {
+        saebMap.set(key, { inep, value: adequado, ano, ciclo });
+      }
+    });
+    const saebRows = buildTop(
+      Array.from(saebMap.values()).map((item) => ({
+        inep: item.inep,
+        nome: formatName(item.inep),
+        value: item.value,
+      }))
+    );
+
+    // Distorção idade-série (menor é melhor)
+    const distEntries = ((indicadorDistorcao as any)?.escolas ?? []) as any[];
+    const distMap = new Map<string, { inep: string; value: number; ano: number }>();
+    distEntries.forEach((entry: any) => {
+      const inep = normalizeInep(entry.inep_id);
+      if (!inep) return;
+      const totals = [entry.ef_total, entry.ef_total_ai, entry.ef_total_af, entry.em_total].filter(
+        (val: any) => typeof val === "number"
+      );
+      const value =
+        typeof entry.ef_total === "number"
+          ? entry.ef_total
+          : totals.length
+            ? totals.reduce((acc: number, val: number) => acc + val, 0) / totals.length
+            : null;
+      if (value == null) return;
+      const ano = typeof entry.ano === "number" ? entry.ano : 0;
+      const current = distMap.get(inep);
+      if (!current || value < current.value || (value === current.value && ano > current.ano)) {
+        distMap.set(inep, { inep, value, ano });
+      }
+    });
+    const distRows = buildTop(
+      Array.from(distMap.values()).map((item) => ({
+        inep: item.inep,
+        nome: formatName(item.inep),
+        value: item.value,
+      })),
+      "asc"
+    );
+
+    // Taxa de rendimento (aprovados médios)
+    const rendimentoEntries = ((indicadorRendimento as any)?.escolas ?? []) as any[];
+    const rendimentoMap = new Map<string, { inep: string; ano: number; sum: number; count: number }>();
+    rendimentoEntries.forEach((entry: any) => {
+      const inep = normalizeInep(entry.inep_id);
+      if (!inep || typeof entry.aprovados !== "number") return;
+      const ano = typeof entry.ano === "number" ? entry.ano : 0;
+      const key = `${inep}-${ano}`;
+      const agg = rendimentoMap.get(key) ?? { inep, ano, sum: 0, count: 0 };
+      agg.sum += entry.aprovados;
+      agg.count += 1;
+      rendimentoMap.set(key, agg);
+    });
+    const rendimentoPerSchool = new Map<string, { inep: string; value: number; ano: number }>();
+    rendimentoMap.forEach((agg) => {
+      if (!agg.count) return;
+      const media = agg.sum / agg.count;
+      const current = rendimentoPerSchool.get(agg.inep);
+      if (!current || agg.ano > current.ano) {
+        rendimentoPerSchool.set(agg.inep, { inep: agg.inep, value: media, ano: agg.ano });
+      }
+    });
+    const rendimentoRows = buildTop(
+      Array.from(rendimentoPerSchool.values()).map((item) => ({
+        inep: item.inep,
+        nome: formatName(item.inep),
+        value: item.value,
+      }))
+    );
+
+    return {
+      ideb: {
+        rows: idebRows,
+        description: "Melhores notas IDEB no último ciclo registrado",
+        formatter: (value: number) => value.toFixed(1),
+      },
+      saeb: {
+        rows: saebRows,
+        description: "Maior % de estudantes em nível adequado no SAEB",
+        formatter: (value: number) => `${value.toFixed(1)}%`,
+      },
+      distorcao: {
+        rows: distRows,
+        description: "Menor distorção idade-série (quanto menor, melhor)",
+        formatter: (value: number) => `${value.toFixed(1)}%`,
+      },
+      rendimento: {
+        rows: rendimentoRows,
+        description: "Maior média de aprovação no Ensino Fundamental",
+        formatter: (value: number) => `${value.toFixed(1)}%`,
+      },
+    };
+  }, [schoolNameLookup]);
+
+  const activeRanking = rankingData[rankingTab];
 
   const selectedSchool = useMemo(() => {
     if (!selectedSchoolId) return null;
@@ -470,38 +655,65 @@ export default function SecretariaPage() {
           )}
 
           <section
-            aria-label="Ranking IDEB"
+            aria-label="Rankings educacionais"
             className="rounded-3xl border border-brand-100 bg-white p-6 shadow-lg shadow-brand-50"
           >
             <div className="flex flex-wrap items-center justify-between gap-4">
-              <div>
-                <p className="text-sm uppercase tracking-wider text-brand-500">Ranking por IDEB</p>
-                <h2 className="text-2xl font-semibold text-slate-900">Top 10 escolas</h2>
+              <div className="space-y-1">
+                <p className="text-sm uppercase tracking-wider text-brand-500">Rankings educacionais</p>
+                <h2 className="text-2xl font-semibold text-slate-900">Top 10 indicadores</h2>
+                <p className="text-sm text-slate-500">{activeRanking.description}</p>
               </div>
-              <span className="text-sm text-slate-500">Fonte: dados simulados 2024</span>
+              <div className="flex flex-wrap gap-2">
+                {rankingTabs.map((tab) => {
+                  const isActive = rankingTab === tab.id;
+                  return (
+                    <button
+                      key={tab.id}
+                      type="button"
+                      onClick={() => setRankingTab(tab.id)}
+                      className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
+                        isActive
+                          ? "border-brand-600 bg-brand-600 text-white"
+                          : "border-brand-200 bg-white text-brand-700 hover:border-brand-400"
+                      }`}
+                    >
+                      {tab.label}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
-            <div className="mt-6 overflow-hidden rounded-2xl border border-brand-50">
-              <div className="grid grid-cols-[90px_auto_120px] sm:grid-cols-[110px_auto_140px] bg-surface-accent px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-slate-500 sm:text-xs">
-                <span>Posição</span>
-                <span>Escola</span>
-                <span className="text-right">IDEB</span>
+            {activeRanking.rows.length > 0 ? (
+              <div className="mt-6 overflow-hidden rounded-2xl border border-brand-50">
+                <div className="grid grid-cols-[90px_auto_120px] sm:grid-cols-[110px_auto_140px] bg-surface-accent px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-slate-500 sm:text-xs">
+                  <span>Posição</span>
+                  <span>Escola</span>
+                  <span className="text-right">Valor</span>
+                </div>
+                <div className="divide-y divide-border-soft bg-white text-sm text-slate-700">
+                  {activeRanking.rows.map((item, index) => (
+                    <div
+                      key={`${item.inep}-${index}`}
+                      className="grid grid-cols-[90px_auto_120px] sm:grid-cols-[110px_auto_140px] items-center px-4 py-4 sm:text-base"
+                    >
+                      <span className="font-semibold text-slate-500">{index + 1}º</span>
+                      <div className="flex flex-col">
+                        <span className="font-medium text-slate-900">{item.nome}</span>
+                      </div>
+                      <span className="text-right font-semibold text-brand-600">
+                        {activeRanking.formatter(item.value)}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="divide-y divide-border-soft bg-white text-sm text-slate-700">
-                {idebRanking.map((item) => (
-                  <div
-                    key={item.nome}
-                    className="grid grid-cols-[90px_auto_120px] sm:grid-cols-[110px_auto_140px] items-center px-4 py-4 sm:text-base"
-                  >
-                    <span className="font-semibold text-slate-500">{item.posicao}º</span>
-                    <span className="font-medium text-slate-900">{item.nome}</span>
-                    <span className="text-right font-semibold text-brand-600">
-                      {item.ideb.toFixed(1)}
-                    </span>
-                  </div>
-                ))}
+            ) : (
+              <div className="mt-6 rounded-2xl border border-dashed border-brand-100 bg-surface-card p-6 text-center text-sm text-slate-500">
+                Ainda não há dados para este indicador.
               </div>
-            </div>
+            )}
           </section>
         </div>
       </div>
