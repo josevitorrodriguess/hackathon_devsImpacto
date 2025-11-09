@@ -1,8 +1,10 @@
 "use client";
 
-import { memo, useEffect, useState } from "react";
+import { memo, useCallback, useEffect, useState } from "react";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 import HeatmapMap from "@/components/heatmap-map";
+
+type LatLngLiteral = { lat: number; lng: number };
 
 interface Escola {
 	id: string;
@@ -49,6 +51,22 @@ function GlobalMap({
 	const [internalShowHeatmap, setInternalShowHeatmap] = useState(false);
 	const [mapCenter, setMapCenter] = useState(DEFAULT_CENTER);
 	const [mapZoom, setMapZoom] = useState(DEFAULT_ZOOM);
+
+	const handleCameraChange = useCallback(
+		(event: { detail?: { center?: LatLngLiteral; zoom?: number } }) => {
+			const center = event.detail?.center;
+			const zoom = event.detail?.zoom;
+			if (center) {
+				setMapCenter((prev) =>
+					prev.lat === center.lat && prev.lng === center.lng ? prev : center,
+				);
+			}
+			if (typeof zoom === "number") {
+				setMapZoom((prev) => (prev === zoom ? prev : zoom));
+			}
+		},
+		[],
+	);
 
 	// controle interno se o pai não passar
 	const heatmapAtivo = showHeatmap ?? internalShowHeatmap;
@@ -126,6 +144,7 @@ function GlobalMap({
 							<Map
 								center={mapCenter}
 								zoom={mapZoom}
+								onCameraChanged={handleCameraChange}
 								gestureHandling="greedy"
 								disableDefaultUI
 								mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID}
