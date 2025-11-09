@@ -6,6 +6,12 @@ import path from "path";
 // Caminho do arquivo local onde os chamados são armazenados
 const CHAMADOS_PATH = path.join(process.cwd(), "src/data/chamados.json");
 
+function gerarIdUnico(): string {
+	const timestamp = Date.now().toString(36);
+	const aleatorio = Math.floor(Math.random() * 10000).toString(36);
+	return `chamado-${timestamp}-${aleatorio}`;
+}
+
 export async function POST(request: Request) {
 	try {
 		const { texto, inep, escolaId } = await request.json();
@@ -64,6 +70,7 @@ Texto recebido:
 		}
 
 		const novoChamado = {
+			id: gerarIdUnico(),
 			inep: Number(inep),
 			...chamadoGerado,
 		};

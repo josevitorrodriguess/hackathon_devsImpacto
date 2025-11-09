@@ -1,4 +1,5 @@
 export interface Chamados {
+	id: string;
 	inep: number;
 	titulo: string;
 	descricao: string;

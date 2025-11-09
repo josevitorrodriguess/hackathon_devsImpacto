@@ -1157,5 +1157,15 @@
     "prioridade": "Média",
     "status": "Aguardando Confirmação da Escola",
     "dataCriacao": "2024-10-27T12:34:56Z"
+  },
+  {
+    "id": "chamado-mhr8q4js-3ip",
+    "inep": 25000,
+    "titulo": "Falta de internet prejudica uso de tablets",
+    "descricao": "A falta de conexão com a internet na escola está impactando negativamente a utilização dos tablets durante as aulas, impedindo o acesso a recursos online e atividades pedagógicas que dependem da internet.",
+    "tipo": "Comunicação e Internet",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "dataCriacao": "2024-10-27T12:34:56Z"
   }
 ]
