@@ -21,11 +21,24 @@ export default function SecretariaLoginPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [message, setMessage] = useState("");
 
+  // 🔹 Função para formatar CPF conforme o usuário digita
+  const formatCPF = (value: string) => {
+    // remove tudo que não for número
+    const digits = value.replace(/\D/g, "");
+    // aplica máscara incremental
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6)
+      return digits.replace(/(\d{3})(\d+)/, "$1.$2");
+    if (digits.length <= 9)
+      return digits.replace(/(\d{3})(\d{3})(\d+)/, "$1.$2.$3");
+    return digits.replace(/(\d{3})(\d{3})(\d{3})(\d{0,2})/, "$1.$2.$3-$4");
+  };
+
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: name === "cpf" ? formatCPF(value) : value,
     }));
   };
 
@@ -40,7 +53,6 @@ export default function SecretariaLoginPage() {
       //   formData.email === mockSecretaria.email &&
       //   formData.token === mockSecretaria.token &&
       //   formData.password === mockSecretaria.password;
-
 
       router.push("/secretaria");
       // } else {
@@ -63,7 +75,8 @@ export default function SecretariaLoginPage() {
             Login do time gestor
           </h1>
           <p className="text-sm text-slate-500">
-            Use CPF 000.000.000-00, e-mail secretaria@educacao.pb.gov.br, token 654321 e senha painel-secretaria.
+            Use CPF 000.000.000-00, e-mail secretaria@educacao.pb.gov.br, token
+            654321 e senha painel-secretaria.
           </p>
         </header>
 
@@ -79,12 +92,14 @@ export default function SecretariaLoginPage() {
               id="secretaria-cpf"
               type="text"
               name="cpf"
+              maxLength={14} // 🔹 limita o tamanho máximo para o padrão do CPF
               value={formData.cpf}
               onChange={handleChange}
               className="w-full rounded-2xl border border-brand-100 bg-brand-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none"
               placeholder="000.000.000-00"
             />
           </div>
+
           <div>
             <label
               htmlFor="secretaria-email"
@@ -102,6 +117,7 @@ export default function SecretariaLoginPage() {
               placeholder="nome@educacao.pb.gov.br"
             />
           </div>
+
           <div>
             <label
               htmlFor="secretaria-token"
@@ -119,6 +135,7 @@ export default function SecretariaLoginPage() {
               placeholder="654321"
             />
           </div>
+
           <div>
             <label
               htmlFor="secretaria-password"
@@ -142,7 +159,9 @@ export default function SecretariaLoginPage() {
             disabled={status === "loading"}
             className="w-full rounded-2xl bg-brand-700 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-lg shadow-brand-200 transition hover:bg-brand-600 disabled:opacity-60"
           >
-            {status === "loading" ? "Validando acesso..." : "Entrar como secretaria"}
+            {status === "loading"
+              ? "Validando acesso..."
+              : "Entrar como secretaria"}
           </button>
         </form>
 
