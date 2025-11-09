@@ -35,20 +35,20 @@ export default function SecretariaLoginPage() {
     setMessage("");
 
     setTimeout(() => {
-      const isValid =
-        formData.cpf === mockSecretaria.cpf &&
-        formData.email === mockSecretaria.email &&
-        formData.token === mockSecretaria.token &&
-        formData.password === mockSecretaria.password;
+      // const isValid =
+      //   formData.cpf === mockSecretaria.cpf &&
+      //   formData.email === mockSecretaria.email &&
+      //   formData.token === mockSecretaria.token &&
+      //   formData.password === mockSecretaria.password;
 
-      if (isValid) {
-        router.push("/secretaria");
-      } else {
-        setStatus("error");
-        setMessage(
-          "Credenciais inválidas. Use CPF 000.000.000-00, e-mail secretaria@educacao.pb.gov.br, token 654321 e senha painel-secretaria."
-        );
-      }
+
+      router.push("/secretaria");
+      // } else {
+      //   setStatus("error");
+      //   setMessage(
+      //     "Credenciais inválidas. Use CPF 000.000.000-00, e-mail secretaria@educacao.pb.gov.br, token 654321 e senha painel-secretaria."
+      //   );
+      // }
     }, 700);
   };
 
