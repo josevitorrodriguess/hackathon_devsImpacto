@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 import Link from "next/link";
 import escolasData from "@/data/escolas_limpo.json";
@@ -16,19 +16,21 @@ const alertas = [
   { regiao: "Litoral", assunto: "Obra com desvio", detalhes: "Aguardando atualização de medições financeiras." },
 ];
 
-/** Processa os dados das escolas do JSON, filtrando apenas as que têm coordenadas válidas */
-const escolas = escolasData
-  .filter((escola) => escola.Latitude != null && escola.Longitude != null)
-  .map((escola, index) => ({
-    id: escola["Código INEP"] || `escola-${index}`,
-    nome: escola["Nome da escola"],
-    pos: { lat: escola.Latitude, lng: escola.Longitude },
-    endereco: escola["Endereço"],
-    codigoINEP: escola["Código INEP"],
-  }));
-
 export default function SecretariaPage() {
   const [showLoginMenu, setShowLoginMenu] = useState(false);
+
+  /** Processa os dados das escolas do JSON, filtrando apenas as que têm coordenadas válidas */
+  const escolas = useMemo(() => {
+    return escolasData
+      .filter((escola) => escola.Latitude != null && escola.Longitude != null)
+      .map((escola, index) => ({
+        id: escola["Código INEP"] || `escola-${index}`,
+        nome: escola["Nome da escola"],
+        pos: { lat: escola.Latitude, lng: escola.Longitude },
+        endereco: escola["Endereço"],
+        codigoINEP: escola["Código INEP"],
+      }));
+  }, []);
 
   return (
     <div className="min-h-screen bg-surface-muted text-slate-900">
@@ -114,62 +116,71 @@ export default function SecretariaPage() {
             </div>
 
             <div className="h-[460px] w-full overflow-hidden rounded-2xl">
-              <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}>
-                <Map
-                  defaultCenter={{ lat: -7.11532, lng: -34.861 }}
-                  defaultZoom={12}
-                  gestureHandling="greedy"
-                  disableDefaultUI
-                  mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID}
-                  style={{ width: "100%", height: "100%" }}
-                  styles={[
-                    {
-                      featureType: "poi",
-                      stylers: [{ visibility: "off" }],
-                    },
-                    {
-                      featureType: "poi.business",
-                      stylers: [{ visibility: "off" }],
-                    },
-                    {
-                      featureType: "poi.attraction",
-                      stylers: [{ visibility: "off" }],
-                    },
-                    {
-                      featureType: "poi.government",
-                      stylers: [{ visibility: "off" }],
-                    },
-                    {
-                      featureType: "poi.medical",
-                      stylers: [{ visibility: "off" }],
-                    },
-                    {
-                      featureType: "poi.park",
-                      stylers: [{ visibility: "off" }],
-                    },
-                    {
-                      featureType: "poi.place_of_worship",
-                      stylers: [{ visibility: "off" }],
-                    },
-                    {
-                      featureType: "poi.school",
-                      stylers: [{ visibility: "off" }],
-                    },
-                    {
-                      featureType: "poi.sports_complex",
-                      stylers: [{ visibility: "off" }],
-                    },
-                  ]}
-                >
-                  {escolas.map((e) => (
-                    <Marker 
-                      key={e.id} 
-                      position={e.pos} 
-                      title={e.nome}
-                    />
-                  ))}
-                </Map>
-              </APIProvider>
+              {process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ? (
+                <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+                  <Map
+                    defaultCenter={{ lat: -7.11532, lng: -34.861 }}
+                    defaultZoom={12}
+                    gestureHandling="greedy"
+                    disableDefaultUI
+                    mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID}
+                    style={{ width: "100%", height: "100%" }}
+                    styles={[
+                      {
+                        featureType: "poi",
+                        stylers: [{ visibility: "off" }],
+                      },
+                      {
+                        featureType: "poi.business",
+                        stylers: [{ visibility: "off" }],
+                      },
+                      {
+                        featureType: "poi.attraction",
+                        stylers: [{ visibility: "off" }],
+                      },
+                      {
+                        featureType: "poi.government",
+                        stylers: [{ visibility: "off" }],
+                      },
+                      {
+                        featureType: "poi.medical",
+                        stylers: [{ visibility: "off" }],
+                      },
+                      {
+                        featureType: "poi.park",
+                        stylers: [{ visibility: "off" }],
+                      },
+                      {
+                        featureType: "poi.place_of_worship",
+                        stylers: [{ visibility: "off" }],
+                      },
+                      {
+                        featureType: "poi.school",
+                        stylers: [{ visibility: "off" }],
+                      },
+                      {
+                        featureType: "poi.sports_complex",
+                        stylers: [{ visibility: "off" }],
+                      },
+                    ]}
+                  >
+                    {escolas.map((e) => (
+                      <Marker 
+                        key={e.id} 
+                        position={e.pos} 
+                        title={e.nome}
+                      />
+                    ))}
+                  </Map>
+                </APIProvider>
+              ) : (
+                <div className="flex h-full items-center justify-center bg-slate-100 text-slate-500">
+                  <div className="text-center">
+                    <p className="text-sm font-medium">Mapa não disponível</p>
+                    <p className="mt-1 text-xs">Configure NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
