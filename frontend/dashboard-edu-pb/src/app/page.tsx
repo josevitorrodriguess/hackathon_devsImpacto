@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const highlightMetrics = [
   { label: "Escolas monitoradas", value: "1.238" },
@@ -30,13 +31,12 @@ const mockData = [
 ];
 
 export default function Home() {
+  const router = useRouter();
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
   const handleLoginOption = (type: "escola" | "secretaria") => {
-    // Aqui você pode redirecionar para a página de login específica
-    console.log(`Login como: ${type}`);
     setIsLoginModalOpen(false);
-    // Exemplo: router.push(`/login/${type}`);
+    router.push(`/login/${type}`);
   };
 
   return (
