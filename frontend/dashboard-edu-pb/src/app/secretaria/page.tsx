@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import GlobalMap from "@/components/global-map";
 import escolasData from "@/data/escolas.json";
 import chamadosData from "@/data/chamados.json";
+import ChatbotFab from "@/components/chatbot-fab";
 
 type FiltroStatus = "Em andamento" | "Rejeitado" | "Concluído";
 
@@ -154,6 +155,8 @@ export default function SecretariaPage() {
           </div>
         </section>
       </div>
+        {/* Chatbot disponível apenas para gestores (secretaria) */}
+        <ChatbotFab />
     </div>
   );
 }
