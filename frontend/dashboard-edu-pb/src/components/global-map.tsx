@@ -18,6 +18,8 @@ interface GlobalMapProps {
 	escolasComPeso?: Escola[];
 	showHeatmap?: boolean;
 	setShowHeatmap?: (value: boolean) => void;
+	onSelectSchool?: (schoolId: string) => void;
+	selectedSchoolId?: string | null;
 }
 
 export default function GlobalMap({
@@ -25,6 +27,8 @@ export default function GlobalMap({
 	escolasComPeso = [],
 	showHeatmap,
 	setShowHeatmap,
+	onSelectSchool,
+	selectedSchoolId,
 }: GlobalMapProps) {
 	const [internalShowHeatmap, setInternalShowHeatmap] = useState(false);
 
@@ -92,7 +96,21 @@ export default function GlobalMap({
 								]}
 							>
 								{escolas.map((e) => (
-									<Marker key={e.id} position={e.pos} title={e.nome} />
+									<Marker
+										key={e.id}
+										position={e.pos}
+										title={e.nome}
+										onClick={() => onSelectSchool?.(e.codigoINEP || e.id)}
+										label={
+											selectedSchoolId === (e.codigoINEP || e.id)
+												? {
+														text: "●",
+														color: "#ad0c2f",
+														fontSize: "24px",
+													}
+												: undefined
+										}
+									/>
 								))}
 							</Map>
 						</APIProvider>
