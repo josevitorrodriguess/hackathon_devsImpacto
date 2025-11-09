@@ -86,7 +86,7 @@ export default function EscolasPage() {
 
   return (
     <div className="min-h-screen bg-white px-4 py-12 text-slate-900">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-8">
         {/* ===== Abas ===== */}
         <div
           role="tablist"
@@ -109,10 +109,10 @@ export default function EscolasPage() {
         {/* ===== VISÃO GERAL ===== */}
         {activeTab === "visao" ? (
           <>
-            <SchoolDashboard />
+            <SchoolDashboard chamados={chamados} inep={inep} />
 
             {/* Lista de demandas enviadas */}
-            <section className="rounded-3xl border border-brand-100 bg-white p-8 shadow-xl shadow-brand-50 mt-10">
+            <section className="rounded-3xl border border-brand-100 bg-white p-6 shadow-xl shadow-brand-50 mt-4">
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-semibold text-slate-900">
                   Demandas enviadas
@@ -122,7 +122,7 @@ export default function EscolasPage() {
               <input
                 type="search"
                 placeholder="Buscar por título, status, tipo..."
-                className="w-full sm:w-64 rounded-full border border-brand-200 bg-white px-4 py-2 text-sm text-slate-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100 mb-6"
+                className="w-full sm:w-64 rounded-full border border-brand-200 bg-white px-4 py-2 text-sm text-slate-700 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100 mb-3"
                 value={busca}
                 onChange={(e) => setBusca(e.target.value)}
               />

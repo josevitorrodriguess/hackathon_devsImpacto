@@ -4,10 +4,20 @@ import React, { useMemo, useState } from "react";
 import dashboardData from "@/data/dashboard_stats.json";
 import escolasData from "@/data/escolas.json";
 import chamadosData from "@/data/chamados.json";
+import type { DemandaProps } from "@/components/demanda-card";
 
 type Summary = { accepted: number; rejected: number; in_progress: number };
+type SelectedData = {
+  nome: string;
+  summary: Summary;
+  demandTypes: Record<string, number>;
+};
+type Props = {
+  chamados?: DemandaProps[];
+  inep?: string | null;
+};
 
-export default function SchoolDashboard() {
+export default function SchoolDashboard({ chamados, inep: externalInep = null }: Props) {
   // build a list of known schools (for mock-login buttons)
   const schools = useMemo(() => {
     const s: { id: string; nome: string }[] = [];
@@ -16,24 +26,52 @@ export default function SchoolDashboard() {
     return s;
   }, []);
 
-  const [loggedInep, setLoggedInep] = useState<string | null>(null);
+  const [loggedInep, setLoggedInep] = useState<string | null>(externalInep);
 
-  // restore mock login from localStorage on mount
+  // Mantém o INEP sincronizado com a página (ou localStorage como fallback)
   React.useEffect(() => {
-    if (typeof window === "undefined") return;
-    const inep = window.localStorage.getItem("inep");
-    if (inep) setLoggedInep(inep);
-  }, []);
+    if (externalInep) {
+      setLoggedInep(externalInep);
+      if (typeof window !== "undefined") {
+        try {
+          window.localStorage.setItem("inep", externalInep);
+        } catch {}
+      }
+      return;
+    }
 
-  // compute selectedData from chamados.json for the logged school
+    if (typeof window === "undefined") return;
+    const storedInep = window.localStorage.getItem("inep");
+    if (storedInep) {
+      setLoggedInep(storedInep);
+      return;
+    }
+
+    const usuarioRaw = window.localStorage.getItem("usuario");
+    if (!usuarioRaw) return;
+    try {
+      const usuario = JSON.parse(usuarioRaw);
+      if (usuario?.inep) setLoggedInep(String(usuario.inep));
+    } catch {}
+  }, [externalInep]);
+
+  const chamadosSource = useMemo<DemandaProps[]>(() => {
+    if (Array.isArray(chamados)) return chamados;
+    return chamadosData as DemandaProps[];
+  }, [chamados]);
+
+  // compute selectedData from chamados (live data when disponível)
   const selectedData = useMemo(() => {
-    const key = loggedInep;
+    const key = loggedInep?.toString().replace(/[^\d]/g, "");
     // default empty
-    const empty = { nome: "—", summary: { accepted: 0, rejected: 0, in_progress: 0 }, demandTypes: {} as Record<string, number> };
+    const empty: SelectedData = { nome: "—", summary: { accepted: 0, rejected: 0, in_progress: 0 }, demandTypes: {} };
     if (!key) return empty;
 
     // filter chamados for this school
-    const chamados = (chamadosData as any[]).filter((c) => (c.inep || c.codigoINEP || c.escolaId || "").toString() === key.toString());
+    const chamadosFiltrados = chamadosSource.filter((c: any) => {
+      const codigo = (c?.inep ?? c?.codigoINEP ?? c?.escolaId ?? "").toString().replace(/[^\d]/g, "");
+      return codigo === key;
+    });
 
     // count statuses
     let accepted = 0;
@@ -41,7 +79,7 @@ export default function SchoolDashboard() {
     let in_progress = 0;
     const demandMap: Record<string, number> = {};
 
-    chamados.forEach((c: any) => {
+    chamadosFiltrados.forEach((c: any) => {
       const status = (c.status || "").toString().toLowerCase();
       if (/conclu|resolvid|finaliz|aceit|fechado|resolut/i.test(status)) accepted += 1;
       else if (/rejeit|recus|negad/i.test(status)) rejected += 1;
@@ -52,17 +90,13 @@ export default function SchoolDashboard() {
     });
 
     // try to find a friendly name
+    const nomeDireto = chamadosFiltrados.find((c: any) => Boolean(c?.escola))?.escola;
     const schoolFromDashboard = (dashboardData as any).schools?.[key]?.nome;
     const escolaFromList = (escolasData as any[]).find((e) => e.inep?.toString() === key.toString());
-    const nome = schoolFromDashboard || escolaFromList?.nome_escola || key;
+    const nome = nomeDireto || schoolFromDashboard || escolaFromList?.nome_escola || key;
 
     return { nome, summary: { accepted, rejected, in_progress }, demandTypes: demandMap };
-  }, [loggedInep]);
-
-  const totalCount = useMemo(() => {
-    const s: Summary = selectedData.summary || { accepted: 0, rejected: 0, in_progress: 0 };
-    return s.accepted + s.rejected + s.in_progress;
-  }, [selectedData]);
+  }, [chamadosSource, loggedInep]);
 
   const demandEntries = useMemo(() => Object.entries(selectedData.demandTypes || {}), [selectedData]);
 
@@ -104,7 +138,7 @@ export default function SchoolDashboard() {
         <div className="w-[350px] rounded-xl border p-4 bg-surface-muted">
           <div className="text-sm text-slate-600">Tipos de demandas mais comuns</div>
           <div className="mt-3 space-y-3">
-            {demandEntries.length === 0 && <div className="text-sm text-slate-500">Sem dados mockados</div>}
+            {demandEntries.length === 0 && <div className="text-sm text-slate-500">Sem dados registrados</div>}
             {demandEntries.map(([type, value]: any) => {
               const v = Number(value || 0);
               const max = Math.max(...demandEntries.map(([, val]) => Number(val || 0)), 1);
@@ -149,20 +183,6 @@ export default function SchoolDashboard() {
         </div>
       )}
 
-      {/* Se houver usuário simulado, mostrar opção de logout */}
-      {loggedInep && (
-        <div className="mt-3">
-          <button
-            onClick={() => {
-              try { localStorage.removeItem("inep"); } catch {}
-              setLoggedInep(null);
-            }}
-            className="text-sm text-red-600 underline"
-          >
-            Encerrar sessão de teste
-          </button>
-        </div>
-      )}
     </section>
   );
 }

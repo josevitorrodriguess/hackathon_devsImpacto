@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 import HeatmapMap from "@/components/heatmap-map";
 
@@ -21,6 +21,10 @@ interface GlobalMapProps {
 	onSelectSchool?: (schoolId: string) => void;
 	selectedSchoolId?: string | null;
 }
+
+const DEFAULT_CENTER = { lat: -7.11532, lng: -34.861 };
+const DEFAULT_ZOOM = 12;
+const FOCUSED_ZOOM = 15;
 
 const defaultMarkerIcon =
 	"data:image/svg+xml;charset=UTF-8," +
@@ -43,12 +47,37 @@ function GlobalMap({
 	selectedSchoolId,
 }: GlobalMapProps) {
 	const [internalShowHeatmap, setInternalShowHeatmap] = useState(false);
+	const [mapCenter, setMapCenter] = useState(DEFAULT_CENTER);
+	const [mapZoom, setMapZoom] = useState(DEFAULT_ZOOM);
 
 	// controle interno se o pai não passar
 	const heatmapAtivo = showHeatmap ?? internalShowHeatmap;
 	const toggle = setShowHeatmap ?? setInternalShowHeatmap;
 
-	const center = { lat: -7.11532, lng: -34.861 };
+	useEffect(() => {
+		const normalize = (value: string | undefined | null) =>
+			value?.toString().replace(/[^\d]/g, "") || null;
+
+		const selectedKey = normalize(selectedSchoolId ?? null);
+		if (!selectedKey) {
+			setMapCenter(DEFAULT_CENTER);
+			setMapZoom(DEFAULT_ZOOM);
+			return;
+		}
+
+		const match = escolas.find((e) => {
+			const candidate = normalize(e.codigoINEP || e.id);
+			return candidate === selectedKey;
+		});
+
+		if (match?.pos) {
+			setMapCenter(match.pos);
+			setMapZoom(FOCUSED_ZOOM);
+		} else {
+			setMapCenter(DEFAULT_CENTER);
+			setMapZoom(DEFAULT_ZOOM);
+		}
+	}, [selectedSchoolId, escolas]);
 
 	return (
 		<div className="rounded-3xl border border-brand-100 bg-white p-4 shadow-2xl shadow-brand-100">
@@ -90,13 +119,13 @@ function GlobalMap({
 								codigoINEP: e.codigoINEP?.toString(), 
 								weight: e.weight ? Number(e.weight) : 0, 
 							}))}
-							center={center}
+							center={mapCenter}
 						/>
 					) : (
 						<APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
 							<Map
-								defaultCenter={center}
-								defaultZoom={12}
+								center={mapCenter}
+								zoom={mapZoom}
 								gestureHandling="greedy"
 								disableDefaultUI
 								mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID}

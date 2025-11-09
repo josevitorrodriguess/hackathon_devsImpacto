@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image"; 
+import escolasData from "@/data/escolas.json";
+import dashboardData from "@/data/dashboard_stats.json";
 
 const identityConfigs = [
   {
@@ -34,12 +36,59 @@ const loginOptions = [
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [sessionIdentity, setSessionIdentity] = useState<{ title: string; subtitle: string } | null>(null);
+
+  const resolveSchoolName = (inep?: string | null) => {
+    if (!inep) return null;
+    const normalized = inep.replace(/[^\d]/g, "");
+    if (!normalized) return null;
+
+    const fromDashboard =
+      (dashboardData as any)?.schools?.[normalized]?.nome ||
+      (dashboardData as any)?.schools?.[inep]?.nome;
+
+    if (fromDashboard) return fromDashboard;
+
+    const fromList = (escolasData as any[]).find(
+      (escola) =>
+        escola?.inep?.toString().replace(/[^\d]/g, "") === normalized ||
+        escola?.["código_inep"]?.toString().replace(/[^\d]/g, "") === normalized
+    );
+
+    return fromList?.nome_escola || normalized;
+  };
+
+  useEffect(() => {
+    if (!pathname || pathname.startsWith("/login") || !pathname.startsWith("/escolas")) {
+      setSessionIdentity(null);
+      return;
+    }
+
+    try {
+      const usuarioRaw = localStorage.getItem("usuario");
+      const usuario = usuarioRaw ? JSON.parse(usuarioRaw) : null;
+      const storedInep = usuario?.inep || localStorage.getItem("inep");
+      const schoolName = resolveSchoolName(storedInep);
+
+      if (schoolName) {
+        setSessionIdentity({
+          title: schoolName,
+          subtitle: "Direção conectada",
+        });
+      } else {
+        setSessionIdentity(null);
+      }
+    } catch {
+      setSessionIdentity(null);
+    }
+  }, [pathname]);
 
   const isLoginRoute = pathname?.startsWith("/login");
   const identity =
     !isLoginRoute && pathname
       ? identityConfigs.find((config) => config.match(pathname))
       : undefined;
+  const displayIdentity = sessionIdentity ?? identity;
 
   return (
     <header className="border-b border-brand-100 bg-surface-muted">
@@ -64,10 +113,10 @@ export function SiteHeader() {
         </Link>
 
         {/* IDENTIDADE OU LOGIN */}
-        {identity ? (
+        {displayIdentity ? (
           <div className="rounded-full border border-brand-100 bg-brand-50 px-5 py-2 text-right shadow-sm">
-            <p className="text-sm font-semibold text-brand-700">{identity.title}</p>
-            <p className="text-xs text-slate-500">{identity.subtitle}</p>
+            <p className="text-sm font-semibold text-brand-700">{displayIdentity.title}</p>
+            <p className="text-xs text-slate-500">{displayIdentity.subtitle}</p>
           </div>
         ) : (
           <div className="relative">
