@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import SchoolDashboard from "@/components/school-dashboard";
 
 
 
@@ -121,7 +122,9 @@ export default function EscolasPage() {
 
         {activeTab === "visao" ? (
           <>
-            {/* ...toda a seção de visão geral permanece igual... */}
+            {/* Dashboard interativo com estatísticas por escola (mocked) */}
+            <SchoolDashboard />
+            {/* restante da visão geral (poderíamos adicionar se necessário) */}
           </>
         ) : (
           <section

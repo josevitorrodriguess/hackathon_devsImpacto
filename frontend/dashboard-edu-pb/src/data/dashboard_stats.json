@@ -1,0 +1,37 @@
+{
+  "schools": {
+    "310001": {
+      "nome": "Escola Municipal A",
+      "summary": { "accepted": 18, "rejected": 4, "in_progress": 9 },
+      "demandTypes": {
+        "Infraestrutura": 12,
+        "Material didático": 6,
+        "Pessoal": 4,
+        "Transporte": 3,
+        "Outros": 6
+      }
+    },
+    "310002": {
+      "nome": "Escola Municipal B",
+      "summary": { "accepted": 8, "rejected": 2, "in_progress": 5 },
+      "demandTypes": {
+        "Infraestrutura": 6,
+        "Material didático": 3,
+        "Pessoal": 2,
+        "Transporte": 1,
+        "Outros": 3
+      }
+    },
+    "310003": {
+      "nome": "Escola Municipal C",
+      "summary": { "accepted": 25, "rejected": 7, "in_progress": 12 },
+      "demandTypes": {
+        "Infraestrutura": 15,
+        "Material didático": 8,
+        "Pessoal": 6,
+        "Transporte": 4,
+        "Outros": 11
+      }
+    }
+  }
+}
