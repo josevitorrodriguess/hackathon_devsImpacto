@@ -1,253 +1,1161 @@
-
 [
-	{ "inep": "25092570", "categoria": "seguranca", "data": "2025-11-02" },
-	{ "inep": "25092570", "categoria": "ti", "data": "2025-11-03" },
-	{ "inep": "25092570", "categoria": "merenda", "data": "2025-11-03" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-04" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-05" },
-	{ "inep": "25092570", "categoria": "transporte", "data": "2025-11-06" },
-	{ "inep": "25092570", "categoria": "infraestrutura", "data": "2025-11-06" },
-	{ "inep": "25092570", "categoria": "ti", "data": "2025-11-07" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-07" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-08" },
-	{ "inep": "25092570", "categoria": "infraestrutura", "data": "2025-11-08" },
-	{ "inep": "25092570", "categoria": "ti", "data": "2025-11-09" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-10" },
-	{ "inep": "25092570", "categoria": "transporte", "data": "2025-11-10" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-11" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-12" },
-	{ "inep": "25092570", "categoria": "ti", "data": "2025-11-13" },
-	{ "inep": "25092570", "categoria": "infraestrutura", "data": "2025-11-14" },
-
-		{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-01" },
-	{ "inep": "25092588", "categoria": "transporte", "data": "2025-11-02" },
-	{ "inep": "25092588", "categoria": "ti", "data": "2025-11-03" },
-	{ "inep": "25092588", "categoria": "infraestrutura", "data": "2025-11-04" },
-	{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-05" },
-	{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-06" },
-	{ "inep": "25092588", "categoria": "seguranca", "data": "2025-11-06" },
-	{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-07" },
-	{ "inep": "25092588", "categoria": "merenda", "data": "2025-11-08" },
-	{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-09" },
-	{ "inep": "25092588", "categoria": "infraestrutura", "data": "2025-11-10" },
-	{ "inep": "25092588", "categoria": "ti", "data": "2025-11-11" },
-	{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-12" },
-
-		{ "inep": "25093231", "categoria": "manutencao", "data": "2025-11-01" },
-	{ "inep": "25093231", "categoria": "ti", "data": "2025-11-02" },
-	{ "inep": "25093231", "categoria": "infraestrutura", "data": "2025-11-03" },
-	{ "inep": "25093231", "categoria": "manutencao", "data": "2025-11-04" },
-	{ "inep": "25093231", "categoria": "manutencao", "data": "2025-11-05" },
-	{ "inep": "25093231", "categoria": "transporte", "data": "2025-11-06" },
-	{ "inep": "25093231", "categoria": "ti", "data": "2025-11-07" },
-	{ "inep": "25093231", "categoria": "manutencao", "data": "2025-11-08" },
-
-	{ "inep": "25093312", "categoria": "manutencao", "data": "2025-11-03" },
-	{ "inep": "25093312", "categoria": "seguranca", "data": "2025-11-05" },
-	{ "inep": "25093312", "categoria": "ti", "data": "2025-11-07" },
-	{ "inep": "25093312", "categoria": "infraestrutura", "data": "2025-11-08" },
-	{ "inep": "25093312", "categoria": "manutencao", "data": "2025-11-10" },
-	{ "inep": "25093312", "categoria": "manutencao", "data": "2025-11-12" },
-
-	{ "inep": "25094220", "categoria": "manutencao", "data": "2025-11-02" },
-	{ "inep": "25094220", "categoria": "transporte", "data": "2025-11-06" },
-	{ "inep": "25094220", "categoria": "ti", "data": "2025-11-07" },
-	{ "inep": "25094220", "categoria": "infraestrutura", "data": "2025-11-09" },
-	{ "inep": "25094220", "categoria": "manutencao", "data": "2025-11-11" },
-
-	{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-04" },
-	{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-05" },
-	{ "inep": "25095994", "categoria": "infraestrutura", "data": "2025-11-06" },
-	{ "inep": "25095994", "categoria": "ti", "data": "2025-11-08" },
-	{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-09" },
-	{ "inep": "25095994", "categoria": "seguranca", "data": "2025-11-09" },
-	{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-10" },
-	{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-11" },
-
-	{ "inep": "25096362", "categoria": "merenda", "data": "2025-11-01" },
-	{ "inep": "25096362", "categoria": "merenda", "data": "2025-11-04" },
-	{ "inep": "25096362", "categoria": "merenda", "data": "2025-11-06" },
-	{ "inep": "25096362", "categoria": "merenda", "data": "2025-11-09" },
-
-	{ "inep": "25134019", "categoria": "infraestrutura", "data": "2025-11-07" },
-	{ "inep": "25134019", "categoria": "manutencao", "data": "2025-11-08" },
-	{ "inep": "25134019", "categoria": "ti", "data": "2025-11-09" },
-
-		{ "inep": "25095668", "categoria": "manutencao", "data": "2025-11-03" },
-	{ "inep": "25095668", "categoria": "manutencao", "data": "2025-11-04" },
-	{ "inep": "25095668", "categoria": "ti", "data": "2025-11-05" },
-
-	{ "inep": "25095650", "categoria": "manutencao", "data": "2025-11-06" },
-	{ "inep": "25095650", "categoria": "infraestrutura", "data": "2025-11-07" },
-
-	{ "inep": "25095633", "categoria": "transporte", "data": "2025-11-02" },
-	{ "inep": "25095633", "categoria": "manutencao", "data": "2025-11-05" },
-
-	{ "inep": "25096486", "categoria": "manutencao", "data": "2025-11-04" },
-	{ "inep": "25096486", "categoria": "manutencao", "data": "2025-11-06" },
-	{ "inep": "25096486", "categoria": "infraestrutura", "data": "2025-11-08" },
-
-	{ "inep": "25096419", "categoria": "ti", "data": "2025-11-02" },
-	{ "inep": "25096419", "categoria": "manutencao", "data": "2025-11-09" },
-
-	{ "inep": "25130455", "categoria": "manutencao", "data": "2025-11-01" },
-	{ "inep": "25130455", "categoria": "seguranca", "data": "2025-11-03" },
-
-	{ "inep": "25113186", "categoria": "ti", "data": "2025-11-05" },
-	{ "inep": "25113186", "categoria": "manutencao", "data": "2025-11-06" },
-
-	{ "inep": "25113194", "categoria": "infraestrutura", "data": "2025-11-07" },
-	{ "inep": "25113194", "categoria": "manutencao", "data": "2025-11-10" },
-
-	{ "inep": "25129260", "categoria": "manutencao", "data": "2025-11-04" },
-	{ "inep": "25129260", "categoria": "transporte", "data": "2025-11-06" },
-
-	{ "inep": "25130579", "categoria": "ti", "data": "2025-11-02" },
-	{ "inep": "25130579", "categoria": "manutencao", "data": "2025-11-08" },
-
-		{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-15" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-16" },
-	{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-17" },
-	{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-13" },
-	{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-14" },
-	{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-12" },
-	{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-13" },
-		{ "inep": "25093231", "categoria": "manutencao", "data": "2025-11-09" },
-		{ "inep": "25093312", "categoria": "manutencao", "data": "2025-11-13" },
-		{ "inep": "25094220", "categoria": "manutencao", "data": "2025-11-12" },
-
-		
-		{ "inep": "25092570", "categoria": "manutencao", "data": "2025-11-18" },
-		{ "inep": "25092570", "categoria": "infraestrutura", "data": "2025-11-19" },
-		{ "inep": "25092570", "categoria": "ti", "data": "2025-11-20" },
-		{ "inep": "25092570", "categoria": "merenda", "data": "2025-11-21" },
-		{ "inep": "25092588", "categoria": "manutencao", "data": "2025-11-15" },
-		{ "inep": "25092588", "categoria": "transporte", "data": "2025-11-16" },
-		{ "inep": "25092588", "categoria": "seguranca", "data": "2025-11-17" },
-		{ "inep": "25093231", "categoria": "manutencao", "data": "2025-11-16" },
-		{ "inep": "25093231", "categoria": "ti", "data": "2025-11-18" },
-		{ "inep": "25093312", "categoria": "infraestrutura", "data": "2025-11-16" },
-		{ "inep": "25093312", "categoria": "manutencao", "data": "2025-11-18" },
-		{ "inep": "25094220", "categoria": "manutencao", "data": "2025-11-15" },
-		{ "inep": "25094220", "categoria": "transporte", "data": "2025-11-18" },
-		{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-14" },
-		{ "inep": "25095994", "categoria": "seguranca", "data": "2025-11-15" },
-		{ "inep": "25096362", "categoria": "merenda", "data": "2025-11-11" },
-		{ "inep": "25096362", "categoria": "alimentacao", "data": "2025-11-20" },
-		{ "inep": "25134019", "categoria": "infraestrutura", "data": "2025-11-12" },
-		{ "inep": "25134019", "categoria": "manutencao", "data": "2025-11-14" },
-		{ "inep": "25095668", "categoria": "manutencao", "data": "2025-11-10" },
-		{ "inep": "25095668", "categoria": "ti", "data": "2025-11-19" },
-		{ "inep": "25095650", "categoria": "infraestrutura", "data": "2025-11-11" },
-		{ "inep": "25095633", "categoria": "transporte", "data": "2025-11-12" },
-		{ "inep": "25096486", "categoria": "manutencao", "data": "2025-11-14" },
-		{ "inep": "25096419", "categoria": "ti", "data": "2025-11-13" },
-		{ "inep": "25130455", "categoria": "seguranca", "data": "2025-11-18" },
-		{ "inep": "25113186", "categoria": "ti", "data": "2025-11-17" },
-		{ "inep": "25113194", "categoria": "infraestrutura", "data": "2025-11-16" },
-		{ "inep": "25129260", "categoria": "manutencao", "data": "2025-11-15" },
-		{ "inep": "25130579", "categoria": "manutencao", "data": "2025-11-19" },
-		{ "inep": "25095773", "categoria": "acesso", "data": "2025-11-20" },
-		{ "inep": "25096265", "categoria": "infraestrutura", "data": "2025-11-21" },
-		{ "inep": "25114840", "categoria": "transporte", "data": "2025-11-22" },
-		{ "inep": "25133543", "categoria": "outros", "data": "2025-11-23" },
-		{ "inep": "25096354", "categoria": "outros", "data": "2025-11-24" },
-		{ "inep": "25095692", "categoria": "transporte", "data": "2025-11-25" },
-		{ "inep": "25096125", "categoria": "manutencao", "data": "2025-11-26" },
-		{ "inep": "25119419", "categoria": "manutencao", "data": "2025-11-27" },
-		{ "inep": "25127713", "categoria": "acesso", "data": "2025-11-28" },
-		{ "inep": "25127799", "categoria": "transporte", "data": "2025-11-29" },
-		{ "inep": "25129058", "categoria": "seguranca", "data": "2025-11-30" },
-		{ "inep": "25095480", "categoria": "transporte", "data": "2025-11-21" },
-		{ "inep": "25110330", "categoria": "transporte", "data": "2025-11-22" },
-		{ "inep": "25095870", "categoria": "limpeza", "data": "2025-11-23" },
-		{ "inep": "25095447", "categoria": "seguranca", "data": "2025-11-24" },
-		{ "inep": "25094491", "categoria": "acesso", "data": "2025-11-25" },
-		{ "inep": "25093231", "categoria": "ti", "data": "2025-11-26" },
-		{ "inep": "25093312", "categoria": "manutencao", "data": "2025-11-27" },
-		{ "inep": "25094220", "categoria": "infraestrutura", "data": "2025-11-28" },
-		{ "inep": "25095994", "categoria": "manutencao", "data": "2025-11-29" },
-		{ "inep": "25096362", "categoria": "merenda", "data": "2025-11-30" },
-		{ "inep": "25134019", "categoria": "ti", "data": "2025-12-01" },
-		{ "inep": "25095668", "categoria": "manutencao", "data": "2025-12-02" },
-		{ "inep": "25095650", "categoria": "infraestrutura", "data": "2025-12-03" },
-		{ "inep": "25095633", "categoria": "manutencao", "data": "2025-12-04" },
-		{ "inep": "25096486", "categoria": "manutencao", "data": "2025-12-05" },
-		{ "inep": "25096419", "categoria": "ti", "data": "2025-12-06" },
-		{ "inep": "25130455", "categoria": "manutencao", "data": "2025-12-07" },
-		{ "inep": "25113186", "categoria": "alimentacao", "data": "2025-12-08" },
-		{ "inep": "25113194", "categoria": "manutencao", "data": "2025-12-09" },
-		{ "inep": "25129260", "categoria": "transporte", "data": "2025-12-10" },
-		{ "inep": "25130579", "categoria": "ti", "data": "2025-12-11" },
-		{ "inep": "25095773", "categoria": "manutencao", "data": "2025-12-12" },
-		{ "inep": "25096265", "categoria": "infraestrutura", "data": "2025-12-13" },
-		{ "inep": "25114840", "categoria": "transporte", "data": "2025-12-14" },
-		{ "inep": "25133543", "categoria": "manutencao", "data": "2025-12-15" },
-		{ "inep": "25096354", "categoria": "limpeza", "data": "2025-12-16" },
-		{ "inep": "25095692", "categoria": "transporte", "data": "2025-12-17" },
-		{ "inep": "25096125", "categoria": "manutencao", "data": "2025-12-18" },
-		{ "inep": "25119419", "categoria": "manutencao", "data": "2025-12-19" },
-		{ "inep": "25127713", "categoria": "acesso", "data": "2025-12-20" },
-		{ "inep": "25127799", "categoria": "transporte", "data": "2025-12-21" },
-		{ "inep": "25129058", "categoria": "seguranca", "data": "2025-12-22" },
-		{ "inep": "25095480", "categoria": "outros", "data": "2025-12-23" },
-		{ "inep": "25110330", "categoria": "transporte", "data": "2025-12-24" },
-		{ "inep": "25095870", "categoria": "limpeza", "data": "2025-12-25" },
-		{ "inep": "25095447", "categoria": "seguranca", "data": "2025-12-26" },
-		{ "inep": "25094491", "categoria": "acesso", "data": "2025-12-27" },
-		{ "inep": "25093231", "categoria": "manutencao", "data": "2025-12-28" },
-		{ "inep": "25093312", "categoria": "manutencao", "data": "2025-12-29" },
-		{ "inep": "25094220", "categoria": "infraestrutura", "data": "2025-12-30" },
-		{ "inep": "25095994", "categoria": "manutencao", "data": "2025-12-31" },
-		{ "inep": "25096362", "categoria": "merenda", "data": "2026-01-02" },
-		{ "inep": "25134019", "categoria": "infraestrutura", "data": "2026-01-03" },
-		{ "inep": "25095668", "categoria": "manutencao", "data": "2026-01-04" },
-		{ "inep": "25095650", "categoria": "infraestrutura", "data": "2026-01-05" },
-		{ "inep": "25095633", "categoria": "transporte", "data": "2026-01-06" },
-		{ "inep": "25096486", "categoria": "manutencao", "data": "2026-01-07" },
-		{ "inep": "25096419", "categoria": "ti", "data": "2026-01-08" },
-		{ "inep": "25130455", "categoria": "manutencao", "data": "2026-01-09" },
-		{ "inep": "25113186", "categoria": "alimentacao", "data": "2026-01-10" },
-		{ "inep": "25113194", "categoria": "manutencao", "data": "2026-01-11" },
-		{ "inep": "25129260", "categoria": "transporte", "data": "2026-01-12" },
-		{ "inep": "25130579", "categoria": "ti", "data": "2026-01-13" },
-        { "inep": "25092570", "categoria": "manutencao", "data": "2026-01-14" },
-	{ "inep": "25093193", "categoria": "manutencao", "data": "2025-11-18" },
-	{ "inep": "25093207", "categoria": "merenda", "data": "2025-11-19" },
-	{ "inep": "25093215", "categoria": "manutencao", "data": "2025-11-20" },
-	{ "inep": "25093240", "categoria": "ti", "data": "2025-11-21" },
-	{ "inep": "25093258", "categoria": "infraestrutura", "data": "2025-11-22" },
-	{ "inep": "25093266", "categoria": "transporte", "data": "2025-11-23" },
-	{ "inep": "25093274", "categoria": "manutencao", "data": "2025-11-24" },
-	{ "inep": "25093282", "categoria": "limpeza", "data": "2025-11-25" },
-	{ "inep": "25093339", "categoria": "manutencao", "data": "2025-11-26" },
-	{ "inep": "25093347", "categoria": "acesso", "data": "2025-11-27" },
-	{ "inep": "25093355", "categoria": "manutencao", "data": "2025-11-28" },
-	{ "inep": "25093363", "categoria": "merenda", "data": "2025-11-29" },
-	{ "inep": "25093380", "categoria": "manutencao", "data": "2025-11-30" },
-	{ "inep": "25093746", "categoria": "infraestrutura", "data": "2025-12-01" },
-	{ "inep": "25093754", "categoria": "manutencao", "data": "2025-12-02" },
-	{ "inep": "25094424", "categoria": "manutencao", "data": "2025-12-03" },
-	{ "inep": "25094564", "categoria": "ti", "data": "2025-12-04" },
-	{ "inep": "25094580", "categoria": "seguranca", "data": "2025-12-05" },
-	{ "inep": "25094955", "categoria": "manutencao", "data": "2025-12-06" },
-	{ "inep": "25094971", "categoria": "manutencao", "data": "2025-12-07" },
-	{ "inep": "25095366", "categoria": "manutencao", "data": "2025-12-08" },
-	{ "inep": "25095374", "categoria": "manutencao", "data": "2025-12-09" },
-	{ "inep": "25095390", "categoria": "ti", "data": "2025-12-10" },
-	{ "inep": "25095412", "categoria": "alimentacao", "data": "2025-12-11" },
-	{ "inep": "25095455", "categoria": "infraestrutura", "data": "2025-12-12" },
-	{ "inep": "25095463", "categoria": "manutencao", "data": "2025-12-13" },
-	{ "inep": "25095501", "categoria": "manutencao", "data": "2025-12-14" },
-	{ "inep": "25095528", "categoria": "manutencao", "data": "2025-12-15" },
-	{ "inep": "25095544", "categoria": "manutencao", "data": "2025-12-16" },
-	{ "inep": "25095560", "categoria": "manutencao", "data": "2025-12-17" },
-	{ "inep": "25095595", "categoria": "manutencao", "data": "2025-12-18" },
-	{ "inep": "25095609", "categoria": "acesso", "data": "2025-12-19" },
-	{ "inep": "25095676", "categoria": "manutencao", "data": "2025-12-20" },
-	{ "inep": "25095684", "categoria": "merenda", "data": "2025-12-21" },
-	{ "inep": "25095706", "categoria": "manutencao", "data": "2025-12-22" },
-	{ "inep": "25095749", "categoria": "limpeza", "data": "2025-12-23" },
-	{ "inep": "25095765", "categoria": "manutencao", "data": "2025-12-24" },
-	{ "inep": "25095790", "categoria": "manutencao", "data": "2025-12-25" }
+  {
+    "inep": "25092570",
+    "categoria": "seguranca",
+    "data": "2025-11-02"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "ti",
+    "data": "2025-11-03"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "merenda",
+    "data": "2025-11-03"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-04"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-05"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "transporte",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "infraestrutura",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "ti",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "infraestrutura",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "ti",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-10"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "transporte",
+    "data": "2025-11-10"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-11"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-12"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "ti",
+    "data": "2025-11-13"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "infraestrutura",
+    "data": "2025-11-14"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-01"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "transporte",
+    "data": "2025-11-02"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "ti",
+    "data": "2025-11-03"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "infraestrutura",
+    "data": "2025-11-04"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-05"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "seguranca",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "merenda",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "infraestrutura",
+    "data": "2025-11-10"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "ti",
+    "data": "2025-11-11"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-12"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "data": "2025-11-01"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "ti",
+    "data": "2025-11-02"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "infraestrutura",
+    "data": "2025-11-03"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "data": "2025-11-04"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "data": "2025-11-05"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "transporte",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "ti",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "data": "2025-11-03"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "seguranca",
+    "data": "2025-11-05"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "ti",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "infraestrutura",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "data": "2025-11-10"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "data": "2025-11-12"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "manutencao",
+    "data": "2025-11-02"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "transporte",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "ti",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "infraestrutura",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "manutencao",
+    "data": "2025-11-11"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-04"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-05"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "infraestrutura",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "ti",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "seguranca",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-10"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-11"
+  },
+  {
+    "inep": "25096362",
+    "categoria": "merenda",
+    "data": "2025-11-01"
+  },
+  {
+    "inep": "25096362",
+    "categoria": "merenda",
+    "data": "2025-11-04"
+  },
+  {
+    "inep": "25096362",
+    "categoria": "merenda",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25096362",
+    "categoria": "merenda",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25134019",
+    "categoria": "infraestrutura",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25134019",
+    "categoria": "manutencao",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25134019",
+    "categoria": "ti",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "data": "2025-11-03"
+  },
+  {
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "data": "2025-11-04"
+  },
+  {
+    "inep": "25095668",
+    "categoria": "ti",
+    "data": "2025-11-05"
+  },
+  {
+    "inep": "25095650",
+    "categoria": "manutencao",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25095650",
+    "categoria": "infraestrutura",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25095633",
+    "categoria": "transporte",
+    "data": "2025-11-02"
+  },
+  {
+    "inep": "25095633",
+    "categoria": "manutencao",
+    "data": "2025-11-05"
+  },
+  {
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "data": "2025-11-04"
+  },
+  {
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25096486",
+    "categoria": "infraestrutura",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25096419",
+    "categoria": "ti",
+    "data": "2025-11-02"
+  },
+  {
+    "inep": "25096419",
+    "categoria": "manutencao",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25130455",
+    "categoria": "manutencao",
+    "data": "2025-11-01"
+  },
+  {
+    "inep": "25130455",
+    "categoria": "seguranca",
+    "data": "2025-11-03"
+  },
+  {
+    "inep": "25113186",
+    "categoria": "ti",
+    "data": "2025-11-05"
+  },
+  {
+    "inep": "25113186",
+    "categoria": "manutencao",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25113194",
+    "categoria": "infraestrutura",
+    "data": "2025-11-07"
+  },
+  {
+    "inep": "25113194",
+    "categoria": "manutencao",
+    "data": "2025-11-10"
+  },
+  {
+    "inep": "25129260",
+    "categoria": "manutencao",
+    "data": "2025-11-04"
+  },
+  {
+    "inep": "25129260",
+    "categoria": "transporte",
+    "data": "2025-11-06"
+  },
+  {
+    "inep": "25130579",
+    "categoria": "ti",
+    "data": "2025-11-02"
+  },
+  {
+    "inep": "25130579",
+    "categoria": "manutencao",
+    "data": "2025-11-08"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-15"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-16"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-17"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-13"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-14"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-12"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-13"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "data": "2025-11-09"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "data": "2025-11-13"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "manutencao",
+    "data": "2025-11-12"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2025-11-18"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "infraestrutura",
+    "data": "2025-11-19"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "ti",
+    "data": "2025-11-20"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "merenda",
+    "data": "2025-11-21"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "data": "2025-11-15"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "transporte",
+    "data": "2025-11-16"
+  },
+  {
+    "inep": "25092588",
+    "categoria": "seguranca",
+    "data": "2025-11-17"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "data": "2025-11-16"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "ti",
+    "data": "2025-11-18"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "infraestrutura",
+    "data": "2025-11-16"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "data": "2025-11-18"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "manutencao",
+    "data": "2025-11-15"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "transporte",
+    "data": "2025-11-18"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-14"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "seguranca",
+    "data": "2025-11-15"
+  },
+  {
+    "inep": "25096362",
+    "categoria": "merenda",
+    "data": "2025-11-11"
+  },
+  {
+    "inep": "25096362",
+    "categoria": "alimentacao",
+    "data": "2025-11-20"
+  },
+  {
+    "inep": "25134019",
+    "categoria": "infraestrutura",
+    "data": "2025-11-12"
+  },
+  {
+    "inep": "25134019",
+    "categoria": "manutencao",
+    "data": "2025-11-14"
+  },
+  {
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "data": "2025-11-10"
+  },
+  {
+    "inep": "25095668",
+    "categoria": "ti",
+    "data": "2025-11-19"
+  },
+  {
+    "inep": "25095650",
+    "categoria": "infraestrutura",
+    "data": "2025-11-11"
+  },
+  {
+    "inep": "25095633",
+    "categoria": "transporte",
+    "data": "2025-11-12"
+  },
+  {
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "data": "2025-11-14"
+  },
+  {
+    "inep": "25096419",
+    "categoria": "ti",
+    "data": "2025-11-13"
+  },
+  {
+    "inep": "25130455",
+    "categoria": "seguranca",
+    "data": "2025-11-18"
+  },
+  {
+    "inep": "25113186",
+    "categoria": "ti",
+    "data": "2025-11-17"
+  },
+  {
+    "inep": "25113194",
+    "categoria": "infraestrutura",
+    "data": "2025-11-16"
+  },
+  {
+    "inep": "25129260",
+    "categoria": "manutencao",
+    "data": "2025-11-15"
+  },
+  {
+    "inep": "25130579",
+    "categoria": "manutencao",
+    "data": "2025-11-19"
+  },
+  {
+    "inep": "25095773",
+    "categoria": "acesso",
+    "data": "2025-11-20"
+  },
+  {
+    "inep": "25096265",
+    "categoria": "infraestrutura",
+    "data": "2025-11-21"
+  },
+  {
+    "inep": "25114840",
+    "categoria": "transporte",
+    "data": "2025-11-22"
+  },
+  {
+    "inep": "25133543",
+    "categoria": "outros",
+    "data": "2025-11-23"
+  },
+  {
+    "inep": "25096354",
+    "categoria": "outros",
+    "data": "2025-11-24"
+  },
+  {
+    "inep": "25095692",
+    "categoria": "transporte",
+    "data": "2025-11-25"
+  },
+  {
+    "inep": "25096125",
+    "categoria": "manutencao",
+    "data": "2025-11-26"
+  },
+  {
+    "inep": "25119419",
+    "categoria": "manutencao",
+    "data": "2025-11-27"
+  },
+  {
+    "inep": "25127713",
+    "categoria": "acesso",
+    "data": "2025-11-28"
+  },
+  {
+    "inep": "25127799",
+    "categoria": "transporte",
+    "data": "2025-11-29"
+  },
+  {
+    "inep": "25129058",
+    "categoria": "seguranca",
+    "data": "2025-11-30"
+  },
+  {
+    "inep": "25095480",
+    "categoria": "transporte",
+    "data": "2025-11-21"
+  },
+  {
+    "inep": "25110330",
+    "categoria": "transporte",
+    "data": "2025-11-22"
+  },
+  {
+    "inep": "25095870",
+    "categoria": "limpeza",
+    "data": "2025-11-23"
+  },
+  {
+    "inep": "25095447",
+    "categoria": "seguranca",
+    "data": "2025-11-24"
+  },
+  {
+    "inep": "25094491",
+    "categoria": "acesso",
+    "data": "2025-11-25"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "ti",
+    "data": "2025-11-26"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "data": "2025-11-27"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "infraestrutura",
+    "data": "2025-11-28"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-11-29"
+  },
+  {
+    "inep": "25096362",
+    "categoria": "merenda",
+    "data": "2025-11-30"
+  },
+  {
+    "inep": "25134019",
+    "categoria": "ti",
+    "data": "2025-12-01"
+  },
+  {
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "data": "2025-12-02"
+  },
+  {
+    "inep": "25095650",
+    "categoria": "infraestrutura",
+    "data": "2025-12-03"
+  },
+  {
+    "inep": "25095633",
+    "categoria": "manutencao",
+    "data": "2025-12-04"
+  },
+  {
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "data": "2025-12-05"
+  },
+  {
+    "inep": "25096419",
+    "categoria": "ti",
+    "data": "2025-12-06"
+  },
+  {
+    "inep": "25130455",
+    "categoria": "manutencao",
+    "data": "2025-12-07"
+  },
+  {
+    "inep": "25113186",
+    "categoria": "alimentacao",
+    "data": "2025-12-08"
+  },
+  {
+    "inep": "25113194",
+    "categoria": "manutencao",
+    "data": "2025-12-09"
+  },
+  {
+    "inep": "25129260",
+    "categoria": "transporte",
+    "data": "2025-12-10"
+  },
+  {
+    "inep": "25130579",
+    "categoria": "ti",
+    "data": "2025-12-11"
+  },
+  {
+    "inep": "25095773",
+    "categoria": "manutencao",
+    "data": "2025-12-12"
+  },
+  {
+    "inep": "25096265",
+    "categoria": "infraestrutura",
+    "data": "2025-12-13"
+  },
+  {
+    "inep": "25114840",
+    "categoria": "transporte",
+    "data": "2025-12-14"
+  },
+  {
+    "inep": "25133543",
+    "categoria": "manutencao",
+    "data": "2025-12-15"
+  },
+  {
+    "inep": "25096354",
+    "categoria": "limpeza",
+    "data": "2025-12-16"
+  },
+  {
+    "inep": "25095692",
+    "categoria": "transporte",
+    "data": "2025-12-17"
+  },
+  {
+    "inep": "25096125",
+    "categoria": "manutencao",
+    "data": "2025-12-18"
+  },
+  {
+    "inep": "25119419",
+    "categoria": "manutencao",
+    "data": "2025-12-19"
+  },
+  {
+    "inep": "25127713",
+    "categoria": "acesso",
+    "data": "2025-12-20"
+  },
+  {
+    "inep": "25127799",
+    "categoria": "transporte",
+    "data": "2025-12-21"
+  },
+  {
+    "inep": "25129058",
+    "categoria": "seguranca",
+    "data": "2025-12-22"
+  },
+  {
+    "inep": "25095480",
+    "categoria": "outros",
+    "data": "2025-12-23"
+  },
+  {
+    "inep": "25110330",
+    "categoria": "transporte",
+    "data": "2025-12-24"
+  },
+  {
+    "inep": "25095870",
+    "categoria": "limpeza",
+    "data": "2025-12-25"
+  },
+  {
+    "inep": "25095447",
+    "categoria": "seguranca",
+    "data": "2025-12-26"
+  },
+  {
+    "inep": "25094491",
+    "categoria": "acesso",
+    "data": "2025-12-27"
+  },
+  {
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "data": "2025-12-28"
+  },
+  {
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "data": "2025-12-29"
+  },
+  {
+    "inep": "25094220",
+    "categoria": "infraestrutura",
+    "data": "2025-12-30"
+  },
+  {
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "data": "2025-12-31"
+  },
+  {
+    "inep": "25096362",
+    "categoria": "merenda",
+    "data": "2026-01-02"
+  },
+  {
+    "inep": "25134019",
+    "categoria": "infraestrutura",
+    "data": "2026-01-03"
+  },
+  {
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "data": "2026-01-04"
+  },
+  {
+    "inep": "25095650",
+    "categoria": "infraestrutura",
+    "data": "2026-01-05"
+  },
+  {
+    "inep": "25095633",
+    "categoria": "transporte",
+    "data": "2026-01-06"
+  },
+  {
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "data": "2026-01-07"
+  },
+  {
+    "inep": "25096419",
+    "categoria": "ti",
+    "data": "2026-01-08"
+  },
+  {
+    "inep": "25130455",
+    "categoria": "manutencao",
+    "data": "2026-01-09"
+  },
+  {
+    "inep": "25113186",
+    "categoria": "alimentacao",
+    "data": "2026-01-10"
+  },
+  {
+    "inep": "25113194",
+    "categoria": "manutencao",
+    "data": "2026-01-11"
+  },
+  {
+    "inep": "25129260",
+    "categoria": "transporte",
+    "data": "2026-01-12"
+  },
+  {
+    "inep": "25130579",
+    "categoria": "ti",
+    "data": "2026-01-13"
+  },
+  {
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "data": "2026-01-14"
+  },
+  {
+    "inep": "25093193",
+    "categoria": "manutencao",
+    "data": "2025-11-18"
+  },
+  {
+    "inep": "25093207",
+    "categoria": "merenda",
+    "data": "2025-11-19"
+  },
+  {
+    "inep": "25093215",
+    "categoria": "manutencao",
+    "data": "2025-11-20"
+  },
+  {
+    "inep": "25093240",
+    "categoria": "ti",
+    "data": "2025-11-21"
+  },
+  {
+    "inep": "25093258",
+    "categoria": "infraestrutura",
+    "data": "2025-11-22"
+  },
+  {
+    "inep": "25093266",
+    "categoria": "transporte",
+    "data": "2025-11-23"
+  },
+  {
+    "inep": "25093274",
+    "categoria": "manutencao",
+    "data": "2025-11-24"
+  },
+  {
+    "inep": "25093282",
+    "categoria": "limpeza",
+    "data": "2025-11-25"
+  },
+  {
+    "inep": "25093339",
+    "categoria": "manutencao",
+    "data": "2025-11-26"
+  },
+  {
+    "inep": "25093347",
+    "categoria": "acesso",
+    "data": "2025-11-27"
+  },
+  {
+    "inep": "25093355",
+    "categoria": "manutencao",
+    "data": "2025-11-28"
+  },
+  {
+    "inep": "25093363",
+    "categoria": "merenda",
+    "data": "2025-11-29"
+  },
+  {
+    "inep": "25093380",
+    "categoria": "manutencao",
+    "data": "2025-11-30"
+  },
+  {
+    "inep": "25093746",
+    "categoria": "infraestrutura",
+    "data": "2025-12-01"
+  },
+  {
+    "inep": "25093754",
+    "categoria": "manutencao",
+    "data": "2025-12-02"
+  },
+  {
+    "inep": "25094424",
+    "categoria": "manutencao",
+    "data": "2025-12-03"
+  },
+  {
+    "inep": "25094564",
+    "categoria": "ti",
+    "data": "2025-12-04"
+  },
+  {
+    "inep": "25094580",
+    "categoria": "seguranca",
+    "data": "2025-12-05"
+  },
+  {
+    "inep": "25094955",
+    "categoria": "manutencao",
+    "data": "2025-12-06"
+  },
+  {
+    "inep": "25094971",
+    "categoria": "manutencao",
+    "data": "2025-12-07"
+  },
+  {
+    "inep": "25095366",
+    "categoria": "manutencao",
+    "data": "2025-12-08"
+  },
+  {
+    "inep": "25095374",
+    "categoria": "manutencao",
+    "data": "2025-12-09"
+  },
+  {
+    "inep": "25095390",
+    "categoria": "ti",
+    "data": "2025-12-10"
+  },
+  {
+    "inep": "25095412",
+    "categoria": "alimentacao",
+    "data": "2025-12-11"
+  },
+  {
+    "inep": "25095455",
+    "categoria": "infraestrutura",
+    "data": "2025-12-12"
+  },
+  {
+    "inep": "25095463",
+    "categoria": "manutencao",
+    "data": "2025-12-13"
+  },
+  {
+    "inep": "25095501",
+    "categoria": "manutencao",
+    "data": "2025-12-14"
+  },
+  {
+    "inep": "25095528",
+    "categoria": "manutencao",
+    "data": "2025-12-15"
+  },
+  {
+    "inep": "25095544",
+    "categoria": "manutencao",
+    "data": "2025-12-16"
+  },
+  {
+    "inep": "25095560",
+    "categoria": "manutencao",
+    "data": "2025-12-17"
+  },
+  {
+    "inep": "25095595",
+    "categoria": "manutencao",
+    "data": "2025-12-18"
+  },
+  {
+    "inep": "25095609",
+    "categoria": "acesso",
+    "data": "2025-12-19"
+  },
+  {
+    "inep": "25095676",
+    "categoria": "manutencao",
+    "data": "2025-12-20"
+  },
+  {
+    "inep": "25095684",
+    "categoria": "merenda",
+    "data": "2025-12-21"
+  },
+  {
+    "inep": "25095706",
+    "categoria": "manutencao",
+    "data": "2025-12-22"
+  },
+  {
+    "inep": "25095749",
+    "categoria": "limpeza",
+    "data": "2025-12-23"
+  },
+  {
+    "inep": "25095765",
+    "categoria": "manutencao",
+    "data": "2025-12-24"
+  },
+  {
+    "inep": "25095790",
+    "categoria": "manutencao",
+    "data": "2025-12-25"
+  },
+  {
+    "inep": 25000,
+    "titulo": "Falta de Cadernos para Alunos",
+    "descricao": "A escola necessita urgentemente de cadernos para atender a demanda dos alunos.",
+    "tipo": "Material Didático",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "dataCriacao": "2024-10-27T12:34:56Z"
+  }
 ]

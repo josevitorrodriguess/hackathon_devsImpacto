@@ -33,19 +33,21 @@ export default function EscolaLoginPage() {
     setMessage("");
 
     setTimeout(() => {
-      const isValid =
-        formData.inep === mockCredenciais.inep &&
-        formData.email === mockCredenciais.email &&
-        formData.password === mockCredenciais.password;
+      localStorage.setItem(
+        "usuario",
+        JSON.stringify({
+          inep: formData.inep,
+          email: formData.email,
+        })
+      );
 
-      if (isValid) {
-        router.push("/escolas");
-      } else {
-        setStatus("error");
-        setMessage(
-          "Credenciais inválidas para o ambiente de demonstração. Use o INEP 25012345, e-mail direcao@escola.pb.gov.br e senha painel-escola."
-        );
-      }
+      console.log("Dados armazenados no localStorage:", {
+        inep: formData.inep,
+        email: formData.email,
+      });
+
+      setStatus("idle");
+      router.push("/escolas");
     }, 600);
   };
 
