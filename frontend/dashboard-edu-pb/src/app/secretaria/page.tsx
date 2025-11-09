@@ -31,6 +31,8 @@ type ChamadoJSON = {
 export default function SecretariaPage() {
   const [showHeatmap, setShowHeatmap] = useState(true);
   const [filtro, setFiltro] = useState<FiltroStatus>("Em andamento");
+  const [buscaEscola, setBuscaEscola] = useState("");
+  const [buscaTipo, setBuscaTipo] = useState("");
   const [chamados, setChamados] = useState(() =>
     (chamadosData as ChamadoJSON[]).map((c) => ({ ...c }))
   );
@@ -62,10 +64,19 @@ export default function SecretariaPage() {
     }));
   }, [chamados, escolaLookup]);
 
-  const chamadosFiltrados = useMemo(
-    () => chamadosComEscola.filter((c) => c.status === filtro),
-    [chamadosComEscola, filtro]
-  );
+  const chamadosFiltrados = useMemo(() => {
+    const nomeTerm = buscaEscola.trim().toLowerCase();
+    const tipoTerm = buscaTipo.trim().toLowerCase();
+
+    return chamadosComEscola.filter((c) => {
+      if (c.status !== filtro) return false;
+      const matchEscola = nomeTerm
+        ? c.escola.toLowerCase().includes(nomeTerm)
+        : true;
+      const matchTipo = tipoTerm ? c.tipo.toLowerCase().includes(tipoTerm) : true;
+      return matchEscola && matchTipo;
+    });
+  }, [buscaEscola, buscaTipo, chamadosComEscola, filtro]);
 
   const escolas = useMemo(() => {
     return (escolasData as any[])
@@ -145,26 +156,62 @@ export default function SecretariaPage() {
               </h2>
             </header>
 
-            {/* 🎨 Filtro */}
-            <div className="mb-6 flex justify-between items-center gap-4">
-              <label
-                htmlFor="filtro-status"
-                className="text-sm font-medium text-slate-700"
-              >
-                Filtrar por status:
-              </label>
-              <select
-                id="filtro-status"
-                value={filtro}
-                onChange={(e) => setFiltro(e.target.value as FiltroStatus)}
-                className="border border-slate-300 bg-white rounded-lg px-4 py-2 text-sm text-slate-800 shadow-sm focus:outline-none focus:ring-0 hover:bg-slate-50 transition-colors"
-              >
-                {filtros.map((f) => (
-                  <option key={f} value={f}>
-                    {f}
-                  </option>
-                ))}
-              </select>
+            {/* 🎨 Filtro & buscas */}
+            <div className="mb-6 grid gap-4 lg:grid-cols-3">
+              <div className="flex flex-col gap-1">
+                <label
+                  htmlFor="filtro-status"
+                  className="text-sm font-medium text-slate-700"
+                >
+                  Status
+                </label>
+                <select
+                  id="filtro-status"
+                  value={filtro}
+                  onChange={(e) => setFiltro(e.target.value as FiltroStatus)}
+                  className="border border-slate-300 bg-white rounded-lg px-4 py-2 text-sm text-slate-800 shadow-sm focus:outline-none focus:ring-0 hover:bg-slate-50 transition-colors"
+                >
+                  {filtros.map((f) => (
+                    <option key={f} value={f}>
+                      {f}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <label
+                  htmlFor="busca-escola"
+                  className="text-sm font-medium text-slate-700"
+                >
+                  Escola
+                </label>
+                <input
+                  id="busca-escola"
+                  type="text"
+                  value={buscaEscola}
+                  onChange={(e) => setBuscaEscola(e.target.value)}
+                  placeholder="Digite o nome ou INEP"
+                  className="border border-slate-300 bg-white rounded-lg px-3 py-2 text-sm text-slate-800 shadow-sm focus:outline-none focus:ring-1 focus:ring-brand-200"
+                />
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <label
+                  htmlFor="busca-tipo"
+                  className="text-sm font-medium text-slate-700"
+                >
+                  Tipo do problema
+                </label>
+                <input
+                  id="busca-tipo"
+                  type="text"
+                  value={buscaTipo}
+                  onChange={(e) => setBuscaTipo(e.target.value)}
+                  placeholder="Ex.: Transporte, Infraestrutura"
+                  className="border border-slate-300 bg-white rounded-lg px-3 py-2 text-sm text-slate-800 shadow-sm focus:outline-none focus:ring-1 focus:ring-brand-200"
+                />
+              </div>
             </div>
 
             {/* 🔹 Lista de demandas */}

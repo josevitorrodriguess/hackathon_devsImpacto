@@ -5,9 +5,6 @@ import React, { useEffect, useRef, useState } from "react";
 export default function ChatbotFab() {
   const [open, setOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
-  const [pos, setPos] = useState<{ x: number; y: number } | null>(null);
-  const draggingRef = useRef(false);
-  const dragOffsetRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
 
   useEffect(() => {
     if (open && inputRef.current) inputRef.current.focus();
@@ -20,74 +17,6 @@ export default function ChatbotFab() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
-
-  // set default position after mount (bottom-right) or load from localStorage
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const saved = window.localStorage.getItem("chatbotFabPos");
-    if (saved) {
-      try {
-        const p = JSON.parse(saved);
-        setPos(p);
-        return;
-      } catch {}
-    }
-    const defaultX = window.innerWidth - 24 - 64; // 24px margin, 64px button
-    const defaultY = window.innerHeight - 24 - 64;
-    setPos({ x: Math.max(8, defaultX), y: Math.max(8, defaultY) });
-  }, []);
-
-  // When chat opens, nudge FAB if it's overlapping the typical send-button area
-  useEffect(() => {
-    if (!open || !pos || typeof window === "undefined") return;
-    const vw = window.innerWidth;
-    const vh = window.innerHeight;
-    // if FAB is within bottom-right quadrant near the panel, move it up
-    if (pos.x > vw - 320 && pos.y > vh - 220) {
-      const newY = Math.max(8, pos.y - 160);
-      const newPos = { x: pos.x, y: newY };
-      setPos(newPos);
-      window.localStorage.setItem("chatbotFabPos", JSON.stringify(newPos));
-    }
-  }, [open, pos]);
-
-  // drag handlers
-  useEffect(() => {
-    function onMove(e: MouseEvent | TouchEvent) {
-      if (!draggingRef.current || !pos) return;
-      let clientX = 0,
-        clientY = 0;
-      if (e instanceof TouchEvent) {
-        clientX = e.touches[0].clientX;
-        clientY = e.touches[0].clientY;
-      } else {
-        clientX = (e as MouseEvent).clientX;
-        clientY = (e as MouseEvent).clientY;
-      }
-      const newX = Math.min(Math.max(8, clientX - dragOffsetRef.current.x), window.innerWidth - 64 - 8);
-      const newY = Math.min(Math.max(8, clientY - dragOffsetRef.current.y), window.innerHeight - 64 - 8);
-      const newPos = { x: newX, y: newY };
-      setPos(newPos);
-    }
-
-    function onUp() {
-      if (!draggingRef.current) return;
-      draggingRef.current = false;
-      if (pos) window.localStorage.setItem("chatbotFabPos", JSON.stringify(pos));
-    }
-
-    window.addEventListener("mousemove", onMove);
-    window.addEventListener("touchmove", onMove, { passive: false });
-    window.addEventListener("mouseup", onUp);
-    window.addEventListener("touchend", onUp);
-    return () => {
-      window.removeEventListener("mousemove", onMove);
-      window.removeEventListener("touchmove", onMove as EventListener);
-      window.removeEventListener("mouseup", onUp);
-      window.removeEventListener("touchend", onUp);
-    };
-  }, [pos]);
-
   return (
     <>
       {/* overlay que borra o fundo quando o chat está aberto */}
@@ -158,36 +87,15 @@ export default function ChatbotFab() {
         </div>
       </div>
 
-      {/* FAB draggable */}
-      {pos && (
-        <div
-          className="fixed z-50"
-          style={{ left: pos.x, top: pos.y, width: 64, height: 64 }}
-        >
+      {/* FAB fixo no canto inferior direito */}
+      {!open && (
+        <div className="fixed bottom-6 right-6 z-50">
           <button
-            onClick={() => setOpen((s) => !s)}
-            onMouseDown={(e) => {
-              draggingRef.current = true;
-              dragOffsetRef.current = { x: e.clientX - pos.x, y: e.clientY - pos.y };
-            }}
-            onTouchStart={(e) => {
-              draggingRef.current = true;
-              const t = e.touches[0];
-              dragOffsetRef.current = { x: t.clientX - pos.x, y: t.clientY - pos.y };
-            }}
-            onDoubleClick={() => {
-              // reset position to default bottom-right
-              const defaultX = window.innerWidth - 24 - 64;
-              const defaultY = window.innerHeight - 24 - 64;
-              const newPos = { x: Math.max(8, defaultX), y: Math.max(8, defaultY) };
-              setPos(newPos);
-              window.localStorage.setItem("chatbotFabPos", JSON.stringify(newPos));
-            }}
+            onClick={() => setOpen(true)}
             aria-label="Abrir chatbot"
-            className="relative h-16 w-16 rounded-full bg-brand-600 shadow-xl ring-1 ring-black/10 active:scale-95 transition-transform touch-none"
-            style={{ display: "flex", alignItems: "center", justifyContent: "center", cursor: "grab" }}
+            className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-600 shadow-xl ring-1 ring-black/10 transition-transform active:scale-95"
           >
-            <div className="h-14 w-14 overflow-hidden rounded-full bg-white">
+            <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white">
               <img src="/images/logochat.png" alt="Chatbot" className="object-cover h-full w-full" />
             </div>
           </button>

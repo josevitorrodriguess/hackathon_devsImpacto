@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { ReactNode, useCallback, useMemo, useRef, useState } from "react";
 import {
   Bar,
   BarChart,
@@ -54,6 +54,7 @@ export default function SecretariaPage() {
   const [selectedSchoolId, setSelectedSchoolId] = useState<string | null>(null);
   const [searchValue, setSearchValue] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const blurTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const escolas = useMemo<Escola[]>(() => {
     return escolasData
@@ -191,24 +192,41 @@ export default function SecretariaPage() {
   const baseTotalChamados = chamadosArray.length;
   const globalResolvedChamados = globalStatusDistribution["Concluído"] || 0;
 
-  const handleSelectSchool = (school: Escola) => {
+  const handleSelectSchool = useCallback((school: Escola) => {
     setSelectedSchoolId(school.codigoINEP || school.id);
     setSearchValue(school.nome);
     setShowSuggestions(false);
-  };
+  }, []);
 
-  const handleMapSelection = (schoolId: string) => {
-    setSelectedSchoolId(schoolId);
-    const match = escolas.find((escola) => (escola.codigoINEP || escola.id) === schoolId);
-    if (match) {
-      setSearchValue(match.nome);
-    }
-  };
+  const handleMapSelection = useCallback(
+    (schoolId: string) => {
+      setSelectedSchoolId(schoolId);
+      const match = escolas.find((escola) => (escola.codigoINEP || escola.id) === schoolId);
+      if (match) {
+        setSearchValue(match.nome);
+      }
+    },
+    [escolas]
+  );
 
   const clearSelection = () => {
     setSelectedSchoolId(null);
     setSearchValue("");
     setShowSuggestions(false);
+  };
+
+  const handleInputFocus = () => {
+    if (blurTimeoutRef.current) {
+      clearTimeout(blurTimeoutRef.current);
+      blurTimeoutRef.current = null;
+    }
+    setShowSuggestions(true);
+  };
+
+  const handleInputBlur = () => {
+    blurTimeoutRef.current = setTimeout(() => {
+      setShowSuggestions(false);
+    }, 160);
   };
 
   return (
@@ -250,8 +268,8 @@ export default function SecretariaPage() {
                     <input
                       value={searchValue}
                       onChange={(event) => setSearchValue(event.target.value)}
-                      onFocus={() => setShowSuggestions(true)}
-                      onBlur={() => setTimeout(() => setShowSuggestions(false), 120)}
+                      onFocus={handleInputFocus}
+                      onBlur={handleInputBlur}
                       placeholder="Digite parte do nome ou código INEP"
                       className="w-full rounded-2xl border border-brand-100 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
                     />
@@ -261,6 +279,11 @@ export default function SecretariaPage() {
                           <button
                             key={escola.id}
                             type="button"
+                            onMouseDown={(event) => event.preventDefault()}
+                            onTouchStart={(event) => {
+                              event.preventDefault();
+                              handleSelectSchool(escola);
+                            }}
                             onClick={() => handleSelectSchool(escola)}
                             className="w-full px-4 py-3 text-left text-sm text-slate-700 transition hover:bg-brand-50"
                           >
@@ -361,7 +384,7 @@ export default function SecretariaPage() {
                     <h3 className="text-lg font-semibold text-slate-900">Distribuição por status</h3>
                     <span className="text-xs uppercase tracking-wide text-slate-500">Chamados</span>
                   </div>
-                  <div className="mt-4 h-64 w-full">
+                  <div className="mt-4 h-64 w-full" aria-label="Gráfico de pizza com distribuição de chamados por status">
                     <ResponsiveContainer width="100%" height="100%">
                       <PieChart>
                         <Pie
@@ -383,6 +406,30 @@ export default function SecretariaPage() {
                       </PieChart>
                     </ResponsiveContainer>
                   </div>
+                  {selectedStatusChartData.length ? (
+                    <dl className="mt-4 space-y-2 text-sm text-slate-600">
+                      {selectedStatusChartData.map((item, index) => {
+                        const percent = selectedTotalChamados
+                          ? Math.round((item.value / selectedTotalChamados) * 100)
+                          : 0;
+                        return (
+                          <div key={`legend-${item.name}`} className="flex items-center justify-between gap-3">
+                            <span className="flex items-center gap-2">
+                              <span
+                                className="h-2.5 w-2.5 rounded-full"
+                                style={{ backgroundColor: pieColors[index % pieColors.length] }}
+                                aria-hidden
+                              />
+                              {item.name}
+                            </span>
+                            <span className="font-semibold text-slate-900">
+                              {item.value} <span className="text-xs text-slate-500">({percent}%)</span>
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </dl>
+                  ) : null}
                 </div>
 
                 <div className="rounded-2xl border border-brand-50 bg-surface-card p-5 shadow-sm">
@@ -392,10 +439,18 @@ export default function SecretariaPage() {
                       Últimos registros
                     </span>
                   </div>
-                  <div className="mt-4 h-64 w-full">
+                  <div className="mt-4 h-64 w-full" aria-label="Gráfico de barras com categorias mais acionadas">
                     <ResponsiveContainer width="100%" height="100%">
                       <BarChart data={selectedCategoriaChartData} barCategoryGap={20}>
-                        <XAxis dataKey="name" tickLine={false} axisLine={false} tick={{ fontSize: 11 }} />
+                        <XAxis
+                          dataKey="name"
+                          tickLine={false}
+                          axisLine={false}
+                          tick={{ fontSize: 11 }}
+                          tickFormatter={(value: string) =>
+                            value.length > 16 ? `${value.slice(0, 16)}…` : value
+                          }
+                        />
                         <YAxis allowDecimals={false} axisLine={false} tickLine={false} />
                         <Tooltip
                           formatter={(value: number) => [`${value} chamados`, "Categoria"]}

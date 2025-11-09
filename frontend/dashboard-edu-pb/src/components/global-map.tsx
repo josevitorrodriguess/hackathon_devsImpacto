@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { memo, useState } from "react";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 import HeatmapMap from "@/components/heatmap-map";
 
@@ -34,7 +34,7 @@ const selectedMarkerIcon =
 		'<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" fill="#ffffff" fill-opacity=".88"/><circle cx="14" cy="14" r="7.5" fill="#e4193b"/><circle cx="14" cy="14" r="3.2" fill="#ffffff"/></svg>',
 	);
 
-export default function GlobalMap({
+function GlobalMap({
 	escolas,
 	escolasComPeso = [],
 	showHeatmap,
@@ -158,20 +158,10 @@ export default function GlobalMap({
 						</div>
 					</div>
 				) : (
-					<div className="absolute left-3 bottom-3 z-50 rounded-md bg-white/80 px-2 py-1 text-xs text-slate-800 shadow flex items-center gap-2">
-						<svg
-							width="18"
-							height="18"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							aria-hidden
-						>
-							<path
-								d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 12 6 12s6-6.75 6-12c0-3.314-2.686-6-6-6z"
-								fill="#ef4444"
-							/>
-							<circle cx="12" cy="8" r="2.5" fill="#fff" />
+					<div className="absolute left-3 bottom-3 z-50 rounded-md bg-white/85 px-2 py-1 text-xs text-slate-800 shadow flex items-center gap-2">
+						<svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden>
+							<circle cx="14" cy="14" r="8" fill="#ad0c2f" fillOpacity="0.92" />
+							<circle cx="14" cy="14" r="4" fill="#ffffff" />
 						</svg>
 						<span className="whitespace-nowrap">Chave — Escolas municipais</span>
 					</div>
@@ -180,3 +170,5 @@ export default function GlobalMap({
 		</div>
 	);
 }
+
+export default memo(GlobalMap);
