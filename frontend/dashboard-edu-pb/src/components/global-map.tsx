@@ -22,6 +22,18 @@ interface GlobalMapProps {
 	selectedSchoolId?: string | null;
 }
 
+const defaultMarkerIcon =
+	"data:image/svg+xml;charset=UTF-8," +
+	encodeURIComponent(
+		'<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="8" fill="#ad0c2f" fill-opacity=".92"/><circle cx="14" cy="14" r="4" fill="#ffffff"/></svg>',
+	);
+
+const selectedMarkerIcon =
+	"data:image/svg+xml;charset=UTF-8," +
+	encodeURIComponent(
+		'<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" fill="#ffffff" fill-opacity=".88"/><circle cx="14" cy="14" r="7.5" fill="#e4193b"/><circle cx="14" cy="14" r="3.2" fill="#ffffff"/></svg>',
+	);
+
 export default function GlobalMap({
 	escolas,
 	escolasComPeso = [],
@@ -101,14 +113,10 @@ export default function GlobalMap({
 										position={e.pos}
 										title={e.nome}
 										onClick={() => onSelectSchool?.(e.codigoINEP || e.id)}
-										label={
+										icon={
 											selectedSchoolId === (e.codigoINEP || e.id)
-												? {
-														text: "●",
-														color: "#ad0c2f",
-														fontSize: "24px",
-													}
-												: undefined
+												? selectedMarkerIcon
+												: defaultMarkerIcon
 										}
 									/>
 								))}

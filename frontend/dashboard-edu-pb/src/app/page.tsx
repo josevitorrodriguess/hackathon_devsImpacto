@@ -92,6 +92,14 @@ export default function SecretariaPage() {
     return map;
   }, [chamadosArray]);
 
+  const globalStatusDistribution = useMemo(() => {
+    return chamadosArray.reduce<Record<string, number>>((acc, chamado) => {
+      if (!chamado.status) return acc;
+      acc[chamado.status] = (acc[chamado.status] || 0) + 1;
+      return acc;
+    }, {});
+  }, [chamadosArray]);
+
   const escolasComPeso = useMemo(() => {
     const arr = escolas.map((escola) => ({
       ...escola,
@@ -181,6 +189,7 @@ export default function SecretariaPage() {
   }, [escolas, searchValue]);
 
   const baseTotalChamados = chamadosArray.length;
+  const globalResolvedChamados = globalStatusDistribution["Concluído"] || 0;
 
   const handleSelectSchool = (school: Escola) => {
     setSelectedSchoolId(school.codigoINEP || school.id);
@@ -217,7 +226,20 @@ export default function SecretariaPage() {
             </p>
           </header>
 
-          <section className="space-y-4">
+          <section className="space-y-6">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <MetricCard
+                label="Chamados totais"
+                value={baseTotalChamados}
+                helper="Consolidado do município"
+              />
+              <MetricCard
+                label="Chamados respondidos"
+                value={globalResolvedChamados}
+                helper="Status concluído"
+              />
+            </div>
+
             <div className="rounded-3xl border border-brand-50 bg-white/80 p-5 shadow-brand-50 shadow-lg">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div className="w-full sm:max-w-md">
