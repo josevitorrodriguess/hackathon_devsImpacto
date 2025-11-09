@@ -21,7 +21,7 @@ export default function ChatbotFab() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-
+  // Função para enviar a mensagem para o backend
   const sendMessage = async (message: string) => {
     // Adiciona a mensagem do usuário ao estado
     setMessages((prevMessages) => [
@@ -30,32 +30,32 @@ export default function ChatbotFab() {
     ]);
 
     try {
-      // Envia a mensagem para o n8n
-      const response = await fetch('https://hackathondevsimpacto.app.n8n.cloud/webhook-test/7f202385-4deb-4c2f-bcb4-fd53552ae014', {
+      // Envia a mensagem para o backend (API do Next.js)
+      const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message }),
+        body: JSON.stringify({ texto: message }), // Envie dados corretos, aqui estou usando valores fictícios
       });
 
       // Verifica se a resposta foi bem-sucedida
       if (!response.ok) {
         console.error(`Erro: resposta do servidor com status ${response.status}`);
-        throw new Error(`Erro na resposta do n8n: ${response.status}`);
+        throw new Error(`Erro na resposta do backend: ${response.status}`);
       }
 
       // Converte a resposta em JSON
       const data = await response.json();
-      console.log("Resposta completa do n8n:", data); // Imprime a resposta inteira
+      console.log("Resposta do backend:", data); // Exibe a resposta do backend
 
-      // Verifica se a propriedade 'reply' existe
+      // Verifica se a resposta contém o campo esperado
       if (!data.reply) {
-        console.error("Resposta não contém a propriedade 'reply'.");
-        throw new Error("A resposta não contém a propriedade 'reply'.");
+        console.error("Resposta não contém o campo esperado 'reply'.");
+        throw new Error("A resposta não contém o texto esperado.");
       }
 
-      // Acessa a resposta do bot, garantindo que a propriedade existe
+      // Acessa a resposta do bot corretamente
       const botMessage = data.reply || "Desculpe, não entendi a sua pergunta.";
 
       // Adiciona a resposta do bot ao estado
@@ -65,11 +65,9 @@ export default function ChatbotFab() {
       ]);
     } catch (error) {
       // Exibe o erro detalhado
-      console.error("Erro ao enviar a mensagem para o n8n:", error);
+      console.error("Erro ao enviar a mensagem para o backend:", error);
     }
   };
-
-
 
   return (
     <>
@@ -130,7 +128,7 @@ export default function ChatbotFab() {
                 aria-label="Digite sua pergunta"
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && inputRef.current) {
-                    sendMessage(inputRef.current.value);
+                    sendMessage(inputRef.current.value); // Chama a função sendMessage
                     inputRef.current.value = ""; // Limpa o campo de entrada
                   }
                 }}
@@ -139,7 +137,7 @@ export default function ChatbotFab() {
                 className="rounded-full bg-brand-600 px-4 py-2 text-sm text-white"
                 onClick={() => {
                   if (inputRef.current) {
-                    sendMessage(inputRef.current.value);
+                    sendMessage(inputRef.current.value); // Chama a função sendMessage
                     inputRef.current.value = ""; // Limpa o campo de entrada
                   }
                 }}
