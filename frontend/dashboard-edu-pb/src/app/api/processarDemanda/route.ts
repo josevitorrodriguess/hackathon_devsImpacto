@@ -94,3 +94,4 @@ Texto recebido:
 		return NextResponse.json({ error: "Falha ao processar a demanda." }, { status: 500 });
 	}
 }
+
