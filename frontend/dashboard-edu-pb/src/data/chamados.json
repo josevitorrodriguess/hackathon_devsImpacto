@@ -447,7 +447,7 @@
     "dataCriacao": "2025-11-09T00:00:00Z",
     "tipo": "Limpeza e Manutenção",
     "prioridade": "Média",
-    "status": "Em andamento"
+    "status": "Aguardando Confirmação da Escola"
   },
   {
     "id": "chamado-25094955-2025-12-03-mat-01",
@@ -1247,6 +1247,36 @@
     "descricao": "Relato de falta de água nas instalações da escola, impactando o uso de banheiros e bebedouros.",
     "tipo": "Saneamento e Água",
     "prioridade": "Alta",
+    "dataCriacao": "2024-10-27T10:30:00Z"
+  },
+  {
+    "id": "chamado-mhrq950o-1c",
+    "inep": 25092570,
+    "titulo": "Falta de papel higiênico",
+    "descricao": "A escola está com falta de papel higiênico nos banheiros.",
+    "tipo": "Limpeza e Manutenção",
+    "prioridade": "Média",
+    "status": "Concluído",
+    "dataCriacao": "2024-10-27T10:30:00Z"
+  },
+  {
+    "id": "chamado-mhrqia4k-7cs",
+    "inep": 25092570,
+    "titulo": "Falta de internet na escola",
+    "descricao": "A escola está sem acesso à internet.",
+    "tipo": "Comunicação e Internet",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "dataCriacao": "2024-10-27T12:00:00Z"
+  },
+  {
+    "id": "chamado-mhrqjwfc-4un",
+    "inep": 25092570,
+    "titulo": "Reposição de tablets para laboratório de informática",
+    "descricao": "Solicitamos a reposição de tablets para o laboratório de informática da escola.",
+    "tipo": "Tecnologia",
+    "prioridade": "Média",
+    "status": "Em Andamento",
     "dataCriacao": "2024-10-27T10:30:00Z"
   }
 ]
