@@ -10,11 +10,10 @@ export async function PATCH(request: Request) {
 
 		if (!id || !acao) {
 			return NextResponse.json(
-				{ error: "Campos obrigatórios: id e acao ('aceitar' ou 'rejeitar')." },
+				{ error: "Campos obrigatórios: id e acao ('aceitar', 'rejeitar' ou 'concluir')." },
 				{ status: 400 }
 			);
 		}
-
 
 		if (!fs.existsSync(CHAMADOS_PATH)) {
 			return NextResponse.json(
@@ -38,13 +37,18 @@ export async function PATCH(request: Request) {
 
 		let novoStatus = chamados[index].status;
 
+		// 🔹 Define o novo status de acordo com a ação recebida
 		if (acao === "aceitar") {
+			// Secretaria aceita -> vai para escola confirmar
 			novoStatus = "Aguardando Confirmação da Escola";
 		} else if (acao === "rejeitar") {
 			novoStatus = "Rejeitado";
+		} else if (acao === "concluir") {
+			// Escola confirma -> marca como concluído
+			novoStatus = "Concluído";
 		} else {
 			return NextResponse.json(
-				{ error: "Ação inválida. Use 'aceitar' ou 'rejeitar'." },
+				{ error: "Ação inválida. Use 'aceitar', 'rejeitar' ou 'concluir'." },
 				{ status: 400 }
 			);
 		}

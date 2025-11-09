@@ -317,7 +317,7 @@
     "dataCriacao": "2025-12-23T00:00:00Z",
     "tipo": "Comunicação e Internet",
     "prioridade": "Alta",
-    "status": "Em andamento"
+    "status": "Aguardando Confirmação da Escola"
   },
   {
     "id": "chamado-25093312-2025-11-05-tec-01",
@@ -327,7 +327,7 @@
     "dataCriacao": "2025-11-05T00:00:00Z",
     "tipo": "Tecnologia",
     "prioridade": "Alta",
-    "status": "Rejeitado"
+    "status": "Concluído"
   },
   {
     "id": "chamado-25093312-2025-11-18-ace-01",
@@ -337,7 +337,7 @@
     "dataCriacao": "2025-11-18T00:00:00Z",
     "tipo": "Acessibilidade",
     "prioridade": "Alta",
-    "status": "Aguardando Confirmação da Escola"
+    "status": "Concluído"
   },
   {
     "id": "chamado-25093312-2025-11-26-san-01",
@@ -347,7 +347,7 @@
     "dataCriacao": "2025-11-26T00:00:00Z",
     "tipo": "Saneamento e Água",
     "prioridade": "Alta",
-    "status": "Em andamento"
+    "status": "Concluído"
   },
   {
     "id": "chamado-25095412-2025-11-14-seg-01",
@@ -357,7 +357,7 @@
     "dataCriacao": "2025-11-14T00:00:00Z",
     "tipo": "Segurança",
     "prioridade": "Alta",
-    "status": "Em andamento"
+    "status": "Aguardando Confirmação da Escola"
   },
   {
     "id": "chamado-25095412-2025-12-02-ene-01",
@@ -397,7 +397,7 @@
     "dataCriacao": "2025-11-17T00:00:00Z",
     "tipo": "Saneamento e Água",
     "prioridade": "Alta",
-    "status": "Em andamento"
+    "status": "Rejeitado"
   },
   {
     "id": "chamado-25093339-2025-11-17-seg-01",
@@ -407,7 +407,7 @@
     "dataCriacao": "2025-11-17T00:00:00Z",
     "tipo": "Segurança",
     "prioridade": "Média",
-    "status": "Em andamento"
+    "status": "Rejeitado"
   },
   {
     "id": "chamado-25093339-2025-12-05-ace-01",
@@ -427,7 +427,7 @@
     "dataCriacao": "2025-12-08T00:00:00Z",
     "tipo": "Segurança",
     "prioridade": "Alta",
-    "status": "Em andamento"
+    "status": "Aguardando Confirmação da Escola"
   },
   {
     "id": "chamado-25093339-2025-12-18-ali-01",
@@ -1208,5 +1208,35 @@
     "tipo": "Tecnologia",
     "prioridade": "Média",
     "status": "Aguardando Confirmação da Escola"
+  },
+  {
+    "id": "chamado-mhrll46x-el",
+    "inep": 25093312,
+    "titulo": "Ônibus escolar quebrado impede alunos de irem à aula",
+    "descricao": "O ônibus escolar quebrou, impossibilitando o transporte dos alunos para a escola, resultando em ausências nas aulas.",
+    "tipo": "Transporte Escolar",
+    "prioridade": "Alta",
+    "status": "Concluído",
+    "dataCriacao": "2024-10-27T10:30:00Z"
+  },
+  {
+    "id": "chamado-mhrmhvxv-z8",
+    "inep": 25093312,
+    "status": "Em andamento",
+    "titulo": "Reposição de tablets para alunos do fundamental",
+    "descricao": "Solicitamos a reposição de tablets para os alunos do ensino fundamental. A falta dos dispositivos está prejudicando o aprendizado e o acesso a recursos digitais importantes para o currículo.",
+    "tipo": "Tecnologia",
+    "prioridade": "Média",
+    "dataCriacao": "2024-10-27T10:30:00Z"
+  },
+  {
+    "id": "chamado-mhrmior0-7ey",
+    "inep": 25093312,
+    "status": "Em andamento",
+    "titulo": "Vazamento de água no banheiro",
+    "descricao": "Detectado vazamento de água nas instalações do banheiro, necessitando reparo urgente para evitar desperdício e possíveis danos à estrutura.",
+    "tipo": "Saneamento e Água",
+    "prioridade": "Média",
+    "dataCriacao": "2024-10-27T10:30:00Z"
   }
 ]

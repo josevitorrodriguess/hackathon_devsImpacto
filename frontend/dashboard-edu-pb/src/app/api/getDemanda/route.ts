@@ -2,97 +2,86 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
+// Evita caching estático do Next
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
+// Caminho do JSON local com os chamados
 const CHAMADOS_PATH = path.join(process.cwd(), "src/data/chamados.json");
 
-// Cache simples em memória + índice por INEP
+// Tipo base de um chamado
 type Chamado = {
-	id: string;
-	inep: number;
-	dataCriacao?: string;
-	[k: string]: any;
+  id: string;
+  inep: string | number;
+  titulo?: string;
+  descricao?: string;
+  dataCriacao?: string;
+  tipo?: string;
+  prioridade?: string;
+  status?: string;
 };
 
-let cache: {
-	mtime: number;
-	byInep: Map<number, Chamado[]>;
-} | null = null;
-
-function buildIndex(arr: Chamado[]) {
-	const byInep = new Map<number, Chamado[]>();
-	for (const c of arr) {
-		const key = Number(c.inep);
-		if (!byInep.has(key)) byInep.set(key, []);
-		byInep.get(key)!.push(c);
-	}
-	return byInep;
+// Função auxiliar para carregar o arquivo JSON
+function loadChamados(): Chamado[] {
+  try {
+    if (!fs.existsSync(CHAMADOS_PATH)) return [];
+    const raw = fs.readFileSync(CHAMADOS_PATH, "utf-8");
+    const data = JSON.parse(raw);
+    return Array.isArray(data) ? data : [];
+  } catch (err) {
+    console.error("Erro ao ler chamados.json:", err);
+    return [];
+  }
 }
 
-function loadIfChanged() {
-	if (!fs.existsSync(CHAMADOS_PATH)) {
-		cache = { mtime: 0, byInep: new Map() };
-		return;
-	}
-	const stat = fs.statSync(CHAMADOS_PATH);
-	const mtime = stat.mtimeMs;
-	if (cache && cache.mtime === mtime) return; // cache válido
+// GET /api/getDemanda?inep=25092570
+export async function GET(req: Request) {
+  try {
+    const { searchParams } = new URL(req.url);
+    const inepParam = searchParams.get("inep");
 
-	// Recarrega do disco e reindexa
-	const raw = fs.readFileSync(CHAMADOS_PATH, "utf-8") || "[]";
-	let todos: Chamado[] = [];
-	try {
-		const parsed = JSON.parse(raw);
-		todos = Array.isArray(parsed) ? parsed : [];
-	} catch {
-		todos = [];
-	}
-	cache = { mtime, byInep: buildIndex(todos) };
-}
+    if (!inepParam) {
+      return NextResponse.json(
+        { error: "Parâmetro 'inep' é obrigatório." },
+        { status: 400 }
+      );
+    }
 
-// Evita caching estático do Next no build
-export const dynamic = "force-dynamic";
+    // Mantém apenas dígitos do INEP
+    const inep = inepParam.replace(/[^\d]/g, "");
+    if (!inep) {
+      return NextResponse.json(
+        { error: "Parâmetro 'inep' inválido." },
+        { status: 400 }
+      );
+    }
 
-export async function GET(
-	_request: Request,
-	context: { params: { inep: string } }
-) {
-	try {
-		const inepParam = context.params?.inep;
-		const inep = Number(inepParam);
-		if (!inepParam || Number.isNaN(inep)) {
-			return NextResponse.json(
-				{ error: "Parâmetro 'inep' obrigatório e numérico." },
-				{ status: 400 }
-			);
-		}
+    const chamados = loadChamados();
 
-		loadIfChanged(); // recarrega do disco apenas se mudou
+    // Filtra chamados por INEP
+    const filtrados = chamados.filter(
+      (c) => String(c.inep).replace(/[^\d]/g, "") === inep
+    );
 
-		const result = cache?.byInep.get(inep) ?? [];
+    // Ordena (mais recentes primeiro, se houver data)
+    filtrados.sort(
+      (a, b) =>
+        new Date(b.dataCriacao ?? 0).getTime() -
+        new Date(a.dataCriacao ?? 0).getTime()
+    );
 
-		// Se quiser ainda mais rápido, remova a ordenação abaixo.
-		// Mantive por padrão para estabilidade (mais recentes primeiro).
-		const ordered =
-			result.length > 1
-				? [...result].sort(
-					(a, b) =>
-						new Date(b.dataCriacao ?? 0).getTime() -
-						new Date(a.dataCriacao ?? 0).getTime()
-				)
-				: result;
-
-		return new NextResponse(JSON.stringify(ordered), {
-			status: 200,
-			headers: {
-				"Content-Type": "application/json; charset=utf-8",
-				// Cache curto no cliente; ajuste se quiser.
-				"Cache-Control": "private, max-age=5",
-			},
-		});
-	} catch (err) {
-		console.error("Erro GET /api/chamados/[inep]:", err);
-		return NextResponse.json(
-			{ error: "Falha ao buscar os chamados." },
-			{ status: 500 }
-		);
-	}
+    return NextResponse.json(filtrados, {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "private, max-age=5",
+      },
+    });
+  } catch (err) {
+    console.error("Erro GET /api/getDemanda:", err);
+    return NextResponse.json(
+      { error: "Falha ao buscar chamados." },
+      { status: 500 }
+    );
+  }
 }

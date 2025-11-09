@@ -40,7 +40,6 @@ Retorne apenas JSON válido, no seguinte formato:
   "descricao": "detalhamento original adaptado",
   "tipo": "Infraestrutura | Material Didático | Recursos Humanos | Tecnologia | Transporte Escolar | Alimentação Escolar | Segurança | Limpeza e Manutenção | Gestão e Administração | Acessibilidade | Energia e Iluminação | Saneamento e Água | Comunicação e Internet | Outros",
   "prioridade": "Baixa | Média | Alta | Urgente",
-  "status": "Aguardando Confirmação da Escola",
   "dataCriacao": "YYYY-MM-DDTHH:mm:ssZ"
 }
 
@@ -51,30 +50,31 @@ Texto recebido:
 		const result = await model.generateContent(prompt);
 		let resposta = result.response.text();
 
-
 		resposta = resposta.replace(/```json/g, "").replace(/```/g, "").trim();
 
 		let chamadoGerado;
 		try {
 			chamadoGerado = JSON.parse(resposta);
 		} catch (e) {
-			console.warn("Modelo retornou texto fora do formato JSON. Texto original:", resposta);
+			console.warn("⚠️ Modelo retornou texto fora do formato JSON. Texto original:", resposta);
 			chamadoGerado = {
 				titulo: "Chamado não estruturado",
 				descricao: resposta,
 				tipo: "Outros",
 				prioridade: "Média",
-				status: "Aguardando Confirmação da Escola",
 				dataCriacao: new Date().toISOString(),
 			};
 		}
 
+		// ✅ Força o status para sempre começar em "Em andamento"
 		const novoChamado = {
 			id: gerarIdUnico(),
 			inep: Number(inep),
+			status: "Em andamento",
 			...chamadoGerado,
 		};
 
+		// Lê e salva no arquivo local
 		let chamadosAtuais: any[] = [];
 		if (fs.existsSync(CHAMADOS_PATH)) {
 			const data = fs.readFileSync(CHAMADOS_PATH, "utf-8");
@@ -83,15 +83,16 @@ Texto recebido:
 
 		chamadosAtuais.push(novoChamado);
 
-
 		fs.writeFileSync(CHAMADOS_PATH, JSON.stringify(chamadosAtuais, null, 2), "utf-8");
 
-		console.log("Novo chamado salvo com sucesso:", novoChamado);
+		console.log("✅ Novo chamado salvo com sucesso:", novoChamado);
 
 		return NextResponse.json(novoChamado);
 	} catch (error) {
-		console.error("Erro interno na rota /api/processarDemanda:", error);
-		return NextResponse.json({ error: "Falha ao processar a demanda." }, { status: 500 });
+		console.error("❌ Erro interno na rota /api/processarDemanda:", error);
+		return NextResponse.json(
+			{ error: "Falha ao processar a demanda." },
+			{ status: 500 }
+		);
 	}
 }
-
