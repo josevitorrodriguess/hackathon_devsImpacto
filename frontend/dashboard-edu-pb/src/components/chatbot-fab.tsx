@@ -4,6 +4,9 @@ import React, { useEffect, useRef, useState } from "react";
 
 export default function ChatbotFab() {
   const [open, setOpen] = useState(false);
+  const [messages, setMessages] = useState([
+    { text: "Olá! Posso ajudar com informações sobre chamados e serviços.", sender: "bot" },
+  ]);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
@@ -17,9 +20,59 @@ export default function ChatbotFab() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
+
+
+  const sendMessage = async (message: string) => {
+    // Adiciona a mensagem do usuário ao estado
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { text: message, sender: "user" },
+    ]);
+
+    try {
+      // Envia a mensagem para o n8n
+      const response = await fetch('https://hackathondevsimpacto.app.n8n.cloud/webhook-test/7f202385-4deb-4c2f-bcb4-fd53552ae014', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message }),
+      });
+
+      // Verifica se a resposta foi bem-sucedida
+      if (!response.ok) {
+        console.error(`Erro: resposta do servidor com status ${response.status}`);
+        throw new Error(`Erro na resposta do n8n: ${response.status}`);
+      }
+
+      // Converte a resposta em JSON
+      const data = await response.json();
+      console.log("Resposta completa do n8n:", data); // Imprime a resposta inteira
+
+      // Verifica se a propriedade 'reply' existe
+      if (!data.reply) {
+        console.error("Resposta não contém a propriedade 'reply'.");
+        throw new Error("A resposta não contém a propriedade 'reply'.");
+      }
+
+      // Acessa a resposta do bot, garantindo que a propriedade existe
+      const botMessage = data.reply || "Desculpe, não entendi a sua pergunta.";
+
+      // Adiciona a resposta do bot ao estado
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: botMessage, sender: "bot" },
+      ]);
+    } catch (error) {
+      // Exibe o erro detalhado
+      console.error("Erro ao enviar a mensagem para o n8n:", error);
+    }
+  };
+
+
+
   return (
     <>
-      {/* overlay que borra o fundo quando o chat está aberto */}
       {open && (
         <div
           className="fixed inset-0 z-40 bg-black/30 backdrop-blur-sm"
@@ -27,18 +80,14 @@ export default function ChatbotFab() {
           aria-hidden
         />
       )}
-
-      {/* painel do chatbot — fica maior (70vw) quando aberto */}
       <div
-        className={`fixed top-0 right-0 z-50 flex h-full transform flex-col bg-white shadow-2xl transition-all duration-300 ease-in-out ${
-          open ? "w-[70vw] translate-x-0 opacity-100" : "w-0 translate-x-1/4 opacity-0 pointer-events-none"
-        }`}
+        className={`fixed top-0 right-0 z-50 flex h-full transform flex-col bg-white shadow-2xl transition-all duration-300 ease-in-out ${open ? "w-[70vw] translate-x-0 opacity-100" : "w-0 translate-x-1/4 opacity-0 pointer-events-none"
+          }`}
         style={{ maxWidth: "1000px" }}
         role="dialog"
         aria-modal={open}
       >
         <div className="relative flex h-full flex-col">
-          {/* cabeçalho do chat */}
           <div className="flex items-center justify-between gap-3 border-b px-6 py-4">
             <div className="flex items-center gap-3">
               <div className="h-12 w-12 flex-shrink-0 overflow-hidden rounded-full bg-slate-100">
@@ -49,8 +98,6 @@ export default function ChatbotFab() {
                 <div className="text-[12px] text-slate-500">Como posso ajudar hoje?</div>
               </div>
             </div>
-
-            {/* X no canto do painel */}
             <button
               onClick={() => setOpen(false)}
               aria-label="Fechar chat"
@@ -61,18 +108,19 @@ export default function ChatbotFab() {
               </svg>
             </button>
           </div>
-
-          {/* conteúdo principal */}
           <div className="flex-1 overflow-y-auto p-6 text-sm text-slate-700">
             <p className="mb-4 text-[13px] text-slate-500">Converse com o assistente. Integração com backend de chatbot pode ser feita aqui.</p>
-            {/* mensagens mock — aqui você pode renderizar o histórico real */}
             <div className="space-y-3">
-              <div className="rounded-lg bg-slate-100 p-3 text-[13px]">Olá! Posso ajudar com informações sobre chamados e serviços.</div>
-              <div className="rounded-lg self-end bg-brand-600 p-3 text-white text-[13px]">Quais escolas possuem mais chamados?</div>
+              {messages.map((msg, index) => (
+                <div
+                  key={index}
+                  className={`rounded-lg p-3 text-[13px] ${msg.sender === "bot" ? "bg-slate-100" : "self-end bg-brand-600 text-white"}`}
+                >
+                  {msg.text}
+                </div>
+              ))}
             </div>
           </div>
-
-          {/* rodapé com campo de entrada */}
           <div className="border-t px-6 py-4">
             <div className="flex gap-3">
               <input
@@ -80,14 +128,28 @@ export default function ChatbotFab() {
                 className="flex-1 rounded-full border px-4 py-3 text-sm outline-none"
                 placeholder="Digite sua pergunta..."
                 aria-label="Digite sua pergunta"
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" && inputRef.current) {
+                    sendMessage(inputRef.current.value);
+                    inputRef.current.value = ""; // Limpa o campo de entrada
+                  }
+                }}
               />
-              <button className="rounded-full bg-brand-600 px-4 py-2 text-sm text-white">Enviar</button>
+              <button
+                className="rounded-full bg-brand-600 px-4 py-2 text-sm text-white"
+                onClick={() => {
+                  if (inputRef.current) {
+                    sendMessage(inputRef.current.value);
+                    inputRef.current.value = ""; // Limpa o campo de entrada
+                  }
+                }}
+              >
+                Enviar
+              </button>
             </div>
           </div>
         </div>
       </div>
-
-      {/* FAB fixo no canto inferior direito */}
       {!open && (
         <div className="fixed bottom-6 right-6 z-50">
           <button
