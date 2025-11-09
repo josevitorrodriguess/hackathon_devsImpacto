@@ -147,7 +147,7 @@ export default function EscolasPage() {
                   htmlFor="prompt-demandas"
                   className="text-sm font-semibold uppercase tracking-wide text-slate-600"
                 >
-                  Prompt da demanda
+                  Qual sua necessidade:
                 </label>
                 <textarea
                   id="prompt-demandas"
