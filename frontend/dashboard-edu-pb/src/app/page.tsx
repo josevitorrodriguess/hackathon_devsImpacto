@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const highlightMetrics = [
   { label: "Escolas monitoradas", value: "1.238" },
   { label: "Relatórios enviados", value: "6.912" },
@@ -54,13 +56,19 @@ export default function Home() {
               Contato
             </a>
           </nav>
-          <div className="flex gap-3">
-            <button className="rounded-full border border-brand-600 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/login/escolas"
+              className="rounded-full border border-brand-600 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50"
+            >
               Login Escolas
-            </button>
-            <button className="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700">
+            </Link>
+            <Link
+              href="/login/secretaria"
+              className="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700"
+            >
               Login Secretaria
-            </button>
+            </Link>
           </div>
         </div>
       </header>
