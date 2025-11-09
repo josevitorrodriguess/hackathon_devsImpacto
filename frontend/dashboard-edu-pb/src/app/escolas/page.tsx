@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const indicadoresEscola = [
   {
     title: "Frequência média",
@@ -59,6 +63,15 @@ const statusTransporte = [
 ];
 
 export default function EscolasPage() {
+  const [activeTab, setActiveTab] = useState<"visao" | "demandas">("visao");
+
+  const tabButtonClasses = (selected: boolean) =>
+    `rounded-2xl px-6 py-2 text-sm font-semibold transition ${
+      selected
+        ? "bg-brand-600 text-white shadow shadow-brand-200"
+        : "border border-brand-200 bg-white text-brand-700 hover:border-brand-500"
+    }`;
+
   return (
     <div className="min-h-screen bg-white px-4 py-12 text-slate-900">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10">
@@ -110,144 +123,218 @@ export default function EscolasPage() {
           </div>
         </header>
 
-        <section className="grid gap-6 md:grid-cols-3">
-          {indicadoresEscola.map((card) => (
-            <div
-              key={card.title}
-              className="rounded-3xl border border-brand-100 bg-white/90 p-6 shadow shadow-brand-50 backdrop-blur"
-            >
-              <p className="text-sm font-medium text-slate-500">{card.title}</p>
-              <p className="mt-3 text-4xl font-bold text-slate-900">
-                {card.value}
-              </p>
-              <p className="mt-1 text-sm text-slate-500">{card.detail}</p>
-              <button className="mt-4 text-sm font-semibold text-brand-600">
-                Ver detalhes →
-              </button>
-            </div>
-          ))}
-        </section>
+        <div
+          role="tablist"
+          aria-label="Conteúdo da página"
+          className="flex flex-wrap items-center gap-3 rounded-3xl border border-brand-100 bg-white/70 p-2 shadow-inner shadow-brand-50"
+        >
+          <button
+            id="tab-visao"
+            role="tab"
+            aria-selected={activeTab === "visao"}
+            aria-controls="painel-visao"
+            tabIndex={activeTab === "visao" ? 0 : -1}
+            className={tabButtonClasses(activeTab === "visao")}
+            onClick={() => setActiveTab("visao")}
+          >
+            Visão geral
+          </button>
+          <button
+            id="tab-demandas"
+            role="tab"
+            aria-selected={activeTab === "demandas"}
+            aria-controls="painel-demandas"
+            tabIndex={activeTab === "demandas" ? 0 : -1}
+            className={tabButtonClasses(activeTab === "demandas")}
+            onClick={() => setActiveTab("demandas")}
+          >
+            Demandas
+          </button>
+        </div>
 
-        <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="rounded-3xl border border-brand-100 bg-white p-8 shadow-xl shadow-brand-50">
-            <header className="flex flex-wrap items-center justify-between gap-4">
-              <div>
-                <p className="text-sm uppercase tracking-wide text-brand-500">
-                  Agenda da semana
-                </p>
-                <h2 className="text-2xl font-semibold text-slate-900">
-                  Prioridades e visitas técnicas
-                </h2>
-              </div>
-              <button className="rounded-full border border-brand-200 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
-                Ver calendário completo
-              </button>
-            </header>
-            <div className="mt-6 space-y-4">
-              {agendaEscola.map((item) => (
+        {activeTab === "visao" ? (
+          <div
+            id="painel-visao"
+            role="tabpanel"
+            aria-labelledby="tab-visao"
+            className="flex flex-col gap-10"
+          >
+            <section className="grid gap-6 md:grid-cols-3">
+              {indicadoresEscola.map((card) => (
                 <div
-                  key={item.title}
-                  className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-brand-50 bg-brand-50/60 p-4"
+                  key={card.title}
+                  className="rounded-3xl border border-brand-100 bg-white/90 p-6 shadow shadow-brand-50 backdrop-blur"
                 >
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-brand-500">
-                      {item.tag}
-                    </p>
-                    <p className="text-lg font-semibold text-slate-900">
-                      {item.title}
-                    </p>
-                    <p className="text-sm text-slate-500">
-                      Equipe responsável: direção e coordenação
-                    </p>
-                  </div>
-                  <span className="rounded-full bg-white px-4 py-2 text-sm font-medium text-brand-700 shadow">
-                    {item.date}
-                  </span>
+                  <p className="text-sm font-medium text-slate-500">{card.title}</p>
+                  <p className="mt-3 text-4xl font-bold text-slate-900">
+                    {card.value}
+                  </p>
+                  <p className="mt-1 text-sm text-slate-500">{card.detail}</p>
+                  <button className="mt-4 text-sm font-semibold text-brand-600">
+                    Ver detalhes →
+                  </button>
                 </div>
               ))}
-            </div>
-          </div>
+            </section>
 
-          <div className="space-y-6">
-            <div className="rounded-3xl border border-brand-100 bg-white p-6 shadow-xl shadow-brand-50">
-              <p className="text-sm uppercase tracking-wide text-brand-500">
-                Comunicados oficiais
-              </p>
-              <div className="mt-4 space-y-4">
-                {comunicados.map((item) => (
-                  <div
-                    key={item.title}
-                    className="rounded-3xl border border-brand-50 bg-brand-50/70 p-4"
-                  >
-                    <p className="text-base font-semibold text-slate-900">
-                      {item.title}
+            <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+              <div className="rounded-3xl border border-brand-100 bg-white p-8 shadow-xl shadow-brand-50">
+                <header className="flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <p className="text-sm uppercase tracking-wide text-brand-500">
+                      Agenda da semana
                     </p>
-                    <p className="text-sm text-slate-600">{item.desc}</p>
+                    <h2 className="text-2xl font-semibold text-slate-900">
+                      Prioridades e visitas técnicas
+                    </h2>
+                  </div>
+                  <button className="rounded-full border border-brand-200 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
+                    Ver calendário completo
+                  </button>
+                </header>
+                <div className="mt-6 space-y-4">
+                  {agendaEscola.map((item) => (
+                    <div
+                      key={item.title}
+                      className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-brand-50 bg-brand-50/60 p-4"
+                    >
+                      <div>
+                        <p className="text-xs uppercase tracking-wide text-brand-500">
+                          {item.tag}
+                        </p>
+                        <p className="text-lg font-semibold text-slate-900">
+                          {item.title}
+                        </p>
+                        <p className="text-sm text-slate-500">
+                          Equipe responsável: direção e coordenação
+                        </p>
+                      </div>
+                      <span className="rounded-full bg-white px-4 py-2 text-sm font-medium text-brand-700 shadow">
+                        {item.date}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div className="rounded-3xl border border-brand-100 bg-white p-6 shadow-xl shadow-brand-50">
+                  <p className="text-sm uppercase tracking-wide text-brand-500">
+                    Comunicados oficiais
+                  </p>
+                  <div className="mt-4 space-y-4">
+                    {comunicados.map((item) => (
+                      <div
+                        key={item.title}
+                        className="rounded-3xl border border-brand-50 bg-brand-50/70 p-4"
+                      >
+                        <p className="text-base font-semibold text-slate-900">
+                          {item.title}
+                        </p>
+                        <p className="text-sm text-slate-600">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <button className="mt-6 w-full rounded-2xl border border-brand-200 py-3 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
+                    Criar comunicado
+                  </button>
+                </div>
+
+                <div className="rounded-3xl border border-brand-100 bg-white p-6 shadow-xl shadow-brand-50">
+                  <p className="text-sm uppercase tracking-wide text-brand-500">
+                    Ações rápidas
+                  </p>
+                  <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                    {acoesRapidas.map((acao) => (
+                      <button
+                        key={acao.title}
+                        className="rounded-3xl border border-brand-100 bg-brand-50/60 p-4 text-left transition hover:border-brand-500"
+                      >
+                        <p className="text-sm font-semibold text-slate-900">
+                          {acao.title}
+                        </p>
+                        <p className="text-xs text-slate-500">{acao.desc}</p>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className="rounded-3xl border border-dashed border-brand-200 bg-white/90 p-8 shadow-inner shadow-brand-50">
+              <header className="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm uppercase tracking-[0.4em] text-brand-500">
+                    Transporte escolar
+                  </p>
+                  <h2 className="text-2xl font-semibold text-slate-900">
+                    Rotas monitoradas e alertas recentes
+                  </h2>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <button className="rounded-full border border-brand-200 px-5 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
+                    Ver mapa
+                  </button>
+                  <button className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand-700">
+                    Atualizar status
+                  </button>
+                </div>
+              </header>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                {statusTransporte.map((zona) => (
+                  <div
+                    key={zona.title}
+                    className="rounded-3xl border border-brand-100 bg-brand-50/80 p-5"
+                  >
+                    <p className="text-sm font-medium text-slate-500">
+                      {zona.title}
+                    </p>
+                    <p className="mt-2 text-3xl font-semibold text-slate-900">
+                      {zona.value}
+                    </p>
+                    <p className="text-xs text-slate-500">{zona.detail}</p>
                   </div>
                 ))}
               </div>
-              <button className="mt-6 w-full rounded-2xl border border-brand-200 py-3 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
-                Criar comunicado
-              </button>
-            </div>
-
-            <div className="rounded-3xl border border-brand-100 bg-white p-6 shadow-xl shadow-brand-50">
-              <p className="text-sm uppercase tracking-wide text-brand-500">
-                Ações rápidas
-              </p>
-              <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                {acoesRapidas.map((acao) => (
-                  <button
-                    key={acao.title}
-                    className="rounded-3xl border border-brand-100 bg-brand-50/60 p-4 text-left transition hover:border-brand-500"
-                  >
-                    <p className="text-sm font-semibold text-slate-900">
-                      {acao.title}
-                    </p>
-                    <p className="text-xs text-slate-500">{acao.desc}</p>
-                  </button>
-                ))}
-              </div>
-            </div>
+            </section>
           </div>
-        </section>
-
-        <section className="rounded-3xl border border-dashed border-brand-200 bg-white/90 p-8 shadow-inner shadow-brand-50">
-          <header className="flex flex-wrap items-center justify-between gap-4">
-            <div>
-              <p className="text-sm uppercase tracking-[0.4em] text-brand-500">
-                Transporte escolar
-              </p>
-              <h2 className="text-2xl font-semibold text-slate-900">
-                Rotas monitoradas e alertas recentes
-              </h2>
-            </div>
-            <div className="flex flex-wrap gap-3">
-              <button className="rounded-full border border-brand-200 px-5 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
-                Ver mapa
-              </button>
-              <button className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand-700">
-                Atualizar status
-              </button>
-            </div>
-          </header>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {statusTransporte.map((zona) => (
-              <div
-                key={zona.title}
-                className="rounded-3xl border border-brand-100 bg-brand-50/80 p-5"
-              >
-                <p className="text-sm font-medium text-slate-500">
-                  {zona.title}
-                </p>
-                <p className="mt-2 text-3xl font-semibold text-slate-900">
-                  {zona.value}
-                </p>
-                <p className="text-xs text-slate-500">{zona.detail}</p>
+        ) : (
+          <section
+            id="painel-demandas"
+            role="tabpanel"
+            aria-labelledby="tab-demandas"
+            className="rounded-3xl border border-brand-100 bg-white p-8 shadow-xl shadow-brand-50"
+          >
+            <p className="text-xs uppercase tracking-[0.4em] text-brand-500">
+              Canal direto
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold text-slate-900">
+              Envie uma nova demanda para a secretaria
+            </h2>
+            <p className="mt-1 text-sm text-slate-600">
+              Descreva sua necessidade com o máximo de detalhes para agilizar o atendimento.
+            </p>
+            <div className="mt-6 space-y-4">
+              <div className="space-y-2">
+                <label
+                  htmlFor="prompt-demandas"
+                  className="text-sm font-semibold uppercase tracking-wide text-slate-600"
+                >
+                  Prompt da demanda
+                </label>
+                <textarea
+                  id="prompt-demandas"
+                  rows={7}
+                  placeholder="Ex.: Precisamos de reposição de tablets para o laboratório de informática."
+                  className="w-full rounded-3xl border border-brand-100 bg-brand-50/70 p-4 text-sm text-slate-700 shadow-inner shadow-brand-50 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100"
+                />
               </div>
-            ))}
-          </div>
-        </section>
+              <button className="rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-brand-700">
+                Enviar demanda
+              </button>
+            </div>
+          </section>
+        )}
       </div>
     </div>
   );
