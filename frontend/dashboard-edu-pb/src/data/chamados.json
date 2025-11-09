@@ -1,1171 +1,2786 @@
 [
   {
+    "id": "chamado-25092570-2025-11-02-seg-01",
     "inep": "25092570",
     "categoria": "seguranca",
-    "data": "2025-11-02"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "ti",
-    "data": "2025-11-03"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "merenda",
-    "data": "2025-11-03"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-04"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-05"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "transporte",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "infraestrutura",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "ti",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "infraestrutura",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "ti",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-10"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "transporte",
-    "data": "2025-11-10"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-11"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-12"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "ti",
-    "data": "2025-11-13"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "infraestrutura",
-    "data": "2025-11-14"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-01"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "transporte",
-    "data": "2025-11-02"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "ti",
-    "data": "2025-11-03"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "infraestrutura",
-    "data": "2025-11-04"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-05"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "seguranca",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "merenda",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "infraestrutura",
-    "data": "2025-11-10"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "ti",
-    "data": "2025-11-11"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-12"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "manutencao",
-    "data": "2025-11-01"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "ti",
-    "data": "2025-11-02"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "infraestrutura",
-    "data": "2025-11-03"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "manutencao",
-    "data": "2025-11-04"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "manutencao",
-    "data": "2025-11-05"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "transporte",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "ti",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "manutencao",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "manutencao",
-    "data": "2025-11-03"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "seguranca",
-    "data": "2025-11-05"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "ti",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "infraestrutura",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "manutencao",
-    "data": "2025-11-10"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "manutencao",
-    "data": "2025-11-12"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "manutencao",
-    "data": "2025-11-02"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "transporte",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "ti",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "infraestrutura",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "manutencao",
-    "data": "2025-11-11"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-04"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-05"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "infraestrutura",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "ti",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "seguranca",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-10"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-11"
-  },
-  {
-    "inep": "25096362",
-    "categoria": "merenda",
-    "data": "2025-11-01"
-  },
-  {
-    "inep": "25096362",
-    "categoria": "merenda",
-    "data": "2025-11-04"
-  },
-  {
-    "inep": "25096362",
-    "categoria": "merenda",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25096362",
-    "categoria": "merenda",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25134019",
-    "categoria": "infraestrutura",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25134019",
-    "categoria": "manutencao",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25134019",
-    "categoria": "ti",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25095668",
-    "categoria": "manutencao",
-    "data": "2025-11-03"
-  },
-  {
-    "inep": "25095668",
-    "categoria": "manutencao",
-    "data": "2025-11-04"
-  },
-  {
-    "inep": "25095668",
-    "categoria": "ti",
-    "data": "2025-11-05"
-  },
-  {
-    "inep": "25095650",
-    "categoria": "manutencao",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25095650",
-    "categoria": "infraestrutura",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25095633",
-    "categoria": "transporte",
-    "data": "2025-11-02"
-  },
-  {
-    "inep": "25095633",
-    "categoria": "manutencao",
-    "data": "2025-11-05"
-  },
-  {
-    "inep": "25096486",
-    "categoria": "manutencao",
-    "data": "2025-11-04"
-  },
-  {
-    "inep": "25096486",
-    "categoria": "manutencao",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25096486",
-    "categoria": "infraestrutura",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25096419",
-    "categoria": "ti",
-    "data": "2025-11-02"
-  },
-  {
-    "inep": "25096419",
-    "categoria": "manutencao",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25130455",
-    "categoria": "manutencao",
-    "data": "2025-11-01"
-  },
-  {
-    "inep": "25130455",
-    "categoria": "seguranca",
-    "data": "2025-11-03"
-  },
-  {
-    "inep": "25113186",
-    "categoria": "ti",
-    "data": "2025-11-05"
-  },
-  {
-    "inep": "25113186",
-    "categoria": "manutencao",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25113194",
-    "categoria": "infraestrutura",
-    "data": "2025-11-07"
-  },
-  {
-    "inep": "25113194",
-    "categoria": "manutencao",
-    "data": "2025-11-10"
-  },
-  {
-    "inep": "25129260",
-    "categoria": "manutencao",
-    "data": "2025-11-04"
-  },
-  {
-    "inep": "25129260",
-    "categoria": "transporte",
-    "data": "2025-11-06"
-  },
-  {
-    "inep": "25130579",
-    "categoria": "ti",
-    "data": "2025-11-02"
-  },
-  {
-    "inep": "25130579",
-    "categoria": "manutencao",
-    "data": "2025-11-08"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-15"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-16"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-17"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-13"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-14"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-12"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-13"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "manutencao",
-    "data": "2025-11-09"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "manutencao",
-    "data": "2025-11-13"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "manutencao",
-    "data": "2025-11-12"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2025-11-18"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "infraestrutura",
-    "data": "2025-11-19"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "ti",
-    "data": "2025-11-20"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "merenda",
-    "data": "2025-11-21"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "manutencao",
-    "data": "2025-11-15"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "transporte",
-    "data": "2025-11-16"
-  },
-  {
-    "inep": "25092588",
-    "categoria": "seguranca",
-    "data": "2025-11-17"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "manutencao",
-    "data": "2025-11-16"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "ti",
-    "data": "2025-11-18"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "infraestrutura",
-    "data": "2025-11-16"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "manutencao",
-    "data": "2025-11-18"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "manutencao",
-    "data": "2025-11-15"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "transporte",
-    "data": "2025-11-18"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-14"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "seguranca",
-    "data": "2025-11-15"
-  },
-  {
-    "inep": "25096362",
-    "categoria": "merenda",
-    "data": "2025-11-11"
-  },
-  {
-    "inep": "25096362",
-    "categoria": "alimentacao",
-    "data": "2025-11-20"
-  },
-  {
-    "inep": "25134019",
-    "categoria": "infraestrutura",
-    "data": "2025-11-12"
-  },
-  {
-    "inep": "25134019",
-    "categoria": "manutencao",
-    "data": "2025-11-14"
-  },
-  {
-    "inep": "25095668",
-    "categoria": "manutencao",
-    "data": "2025-11-10"
-  },
-  {
-    "inep": "25095668",
-    "categoria": "ti",
-    "data": "2025-11-19"
-  },
-  {
-    "inep": "25095650",
-    "categoria": "infraestrutura",
-    "data": "2025-11-11"
-  },
-  {
-    "inep": "25095633",
-    "categoria": "transporte",
-    "data": "2025-11-12"
-  },
-  {
-    "inep": "25096486",
-    "categoria": "manutencao",
-    "data": "2025-11-14"
-  },
-  {
-    "inep": "25096419",
-    "categoria": "ti",
-    "data": "2025-11-13"
-  },
-  {
-    "inep": "25130455",
-    "categoria": "seguranca",
-    "data": "2025-11-18"
-  },
-  {
-    "inep": "25113186",
-    "categoria": "ti",
-    "data": "2025-11-17"
-  },
-  {
-    "inep": "25113194",
-    "categoria": "infraestrutura",
-    "data": "2025-11-16"
-  },
-  {
-    "inep": "25129260",
-    "categoria": "manutencao",
-    "data": "2025-11-15"
-  },
-  {
-    "inep": "25130579",
-    "categoria": "manutencao",
-    "data": "2025-11-19"
-  },
-  {
-    "inep": "25095773",
-    "categoria": "acesso",
-    "data": "2025-11-20"
-  },
-  {
-    "inep": "25096265",
-    "categoria": "infraestrutura",
-    "data": "2025-11-21"
-  },
-  {
-    "inep": "25114840",
-    "categoria": "transporte",
-    "data": "2025-11-22"
-  },
-  {
-    "inep": "25133543",
-    "categoria": "outros",
-    "data": "2025-11-23"
-  },
-  {
-    "inep": "25096354",
-    "categoria": "outros",
-    "data": "2025-11-24"
-  },
-  {
-    "inep": "25095692",
-    "categoria": "transporte",
-    "data": "2025-11-25"
-  },
-  {
-    "inep": "25096125",
-    "categoria": "manutencao",
-    "data": "2025-11-26"
-  },
-  {
-    "inep": "25119419",
-    "categoria": "manutencao",
-    "data": "2025-11-27"
-  },
-  {
-    "inep": "25127713",
-    "categoria": "acesso",
-    "data": "2025-11-28"
-  },
-  {
-    "inep": "25127799",
-    "categoria": "transporte",
-    "data": "2025-11-29"
-  },
-  {
-    "inep": "25129058",
-    "categoria": "seguranca",
-    "data": "2025-11-30"
-  },
-  {
-    "inep": "25095480",
-    "categoria": "transporte",
-    "data": "2025-11-21"
-  },
-  {
-    "inep": "25110330",
-    "categoria": "transporte",
-    "data": "2025-11-22"
-  },
-  {
-    "inep": "25095870",
-    "categoria": "limpeza",
-    "data": "2025-11-23"
-  },
-  {
-    "inep": "25095447",
-    "categoria": "seguranca",
-    "data": "2025-11-24"
-  },
-  {
-    "inep": "25094491",
-    "categoria": "acesso",
-    "data": "2025-11-25"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "ti",
-    "data": "2025-11-26"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "manutencao",
-    "data": "2025-11-27"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "infraestrutura",
-    "data": "2025-11-28"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-11-29"
-  },
-  {
-    "inep": "25096362",
-    "categoria": "merenda",
-    "data": "2025-11-30"
-  },
-  {
-    "inep": "25134019",
-    "categoria": "ti",
-    "data": "2025-12-01"
-  },
-  {
-    "inep": "25095668",
-    "categoria": "manutencao",
-    "data": "2025-12-02"
-  },
-  {
-    "inep": "25095650",
-    "categoria": "infraestrutura",
-    "data": "2025-12-03"
-  },
-  {
-    "inep": "25095633",
-    "categoria": "manutencao",
-    "data": "2025-12-04"
-  },
-  {
-    "inep": "25096486",
-    "categoria": "manutencao",
-    "data": "2025-12-05"
-  },
-  {
-    "inep": "25096419",
-    "categoria": "ti",
-    "data": "2025-12-06"
-  },
-  {
-    "inep": "25130455",
-    "categoria": "manutencao",
-    "data": "2025-12-07"
-  },
-  {
-    "inep": "25113186",
-    "categoria": "alimentacao",
-    "data": "2025-12-08"
-  },
-  {
-    "inep": "25113194",
-    "categoria": "manutencao",
-    "data": "2025-12-09"
-  },
-  {
-    "inep": "25129260",
-    "categoria": "transporte",
-    "data": "2025-12-10"
-  },
-  {
-    "inep": "25130579",
-    "categoria": "ti",
-    "data": "2025-12-11"
-  },
-  {
-    "inep": "25095773",
-    "categoria": "manutencao",
-    "data": "2025-12-12"
-  },
-  {
-    "inep": "25096265",
-    "categoria": "infraestrutura",
-    "data": "2025-12-13"
-  },
-  {
-    "inep": "25114840",
-    "categoria": "transporte",
-    "data": "2025-12-14"
-  },
-  {
-    "inep": "25133543",
-    "categoria": "manutencao",
-    "data": "2025-12-15"
-  },
-  {
-    "inep": "25096354",
-    "categoria": "limpeza",
-    "data": "2025-12-16"
-  },
-  {
-    "inep": "25095692",
-    "categoria": "transporte",
-    "data": "2025-12-17"
-  },
-  {
-    "inep": "25096125",
-    "categoria": "manutencao",
-    "data": "2025-12-18"
-  },
-  {
-    "inep": "25119419",
-    "categoria": "manutencao",
-    "data": "2025-12-19"
-  },
-  {
-    "inep": "25127713",
-    "categoria": "acesso",
-    "data": "2025-12-20"
-  },
-  {
-    "inep": "25127799",
-    "categoria": "transporte",
-    "data": "2025-12-21"
-  },
-  {
-    "inep": "25129058",
-    "categoria": "seguranca",
-    "data": "2025-12-22"
-  },
-  {
-    "inep": "25095480",
-    "categoria": "outros",
-    "data": "2025-12-23"
-  },
-  {
-    "inep": "25110330",
-    "categoria": "transporte",
-    "data": "2025-12-24"
-  },
-  {
-    "inep": "25095870",
-    "categoria": "limpeza",
-    "data": "2025-12-25"
-  },
-  {
-    "inep": "25095447",
-    "categoria": "seguranca",
-    "data": "2025-12-26"
-  },
-  {
-    "inep": "25094491",
-    "categoria": "acesso",
-    "data": "2025-12-27"
-  },
-  {
-    "inep": "25093231",
-    "categoria": "manutencao",
-    "data": "2025-12-28"
-  },
-  {
-    "inep": "25093312",
-    "categoria": "manutencao",
-    "data": "2025-12-29"
-  },
-  {
-    "inep": "25094220",
-    "categoria": "infraestrutura",
-    "data": "2025-12-30"
-  },
-  {
-    "inep": "25095994",
-    "categoria": "manutencao",
-    "data": "2025-12-31"
-  },
-  {
-    "inep": "25096362",
-    "categoria": "merenda",
-    "data": "2026-01-02"
-  },
-  {
-    "inep": "25134019",
-    "categoria": "infraestrutura",
-    "data": "2026-01-03"
-  },
-  {
-    "inep": "25095668",
-    "categoria": "manutencao",
-    "data": "2026-01-04"
-  },
-  {
-    "inep": "25095650",
-    "categoria": "infraestrutura",
-    "data": "2026-01-05"
-  },
-  {
-    "inep": "25095633",
-    "categoria": "transporte",
-    "data": "2026-01-06"
-  },
-  {
-    "inep": "25096486",
-    "categoria": "manutencao",
-    "data": "2026-01-07"
-  },
-  {
-    "inep": "25096419",
-    "categoria": "ti",
-    "data": "2026-01-08"
-  },
-  {
-    "inep": "25130455",
-    "categoria": "manutencao",
-    "data": "2026-01-09"
-  },
-  {
-    "inep": "25113186",
-    "categoria": "alimentacao",
-    "data": "2026-01-10"
-  },
-  {
-    "inep": "25113194",
-    "categoria": "manutencao",
-    "data": "2026-01-11"
-  },
-  {
-    "inep": "25129260",
-    "categoria": "transporte",
-    "data": "2026-01-12"
-  },
-  {
-    "inep": "25130579",
-    "categoria": "ti",
-    "data": "2026-01-13"
-  },
-  {
-    "inep": "25092570",
-    "categoria": "manutencao",
-    "data": "2026-01-14"
-  },
-  {
-    "inep": "25093193",
-    "categoria": "manutencao",
-    "data": "2025-11-18"
-  },
-  {
-    "inep": "25093207",
-    "categoria": "merenda",
-    "data": "2025-11-19"
-  },
-  {
-    "inep": "25093215",
-    "categoria": "manutencao",
-    "data": "2025-11-20"
-  },
-  {
-    "inep": "25093240",
-    "categoria": "ti",
-    "data": "2025-11-21"
-  },
-  {
-    "inep": "25093258",
-    "categoria": "infraestrutura",
-    "data": "2025-11-22"
-  },
-  {
-    "inep": "25093266",
-    "categoria": "transporte",
-    "data": "2025-11-23"
-  },
-  {
-    "inep": "25093274",
-    "categoria": "manutencao",
-    "data": "2025-11-24"
-  },
-  {
-    "inep": "25093282",
-    "categoria": "limpeza",
-    "data": "2025-11-25"
-  },
-  {
-    "inep": "25093339",
-    "categoria": "manutencao",
-    "data": "2025-11-26"
-  },
-  {
-    "inep": "25093347",
-    "categoria": "acesso",
-    "data": "2025-11-27"
-  },
-  {
-    "inep": "25093355",
-    "categoria": "manutencao",
-    "data": "2025-11-28"
-  },
-  {
-    "inep": "25093363",
-    "categoria": "merenda",
-    "data": "2025-11-29"
-  },
-  {
-    "inep": "25093380",
-    "categoria": "manutencao",
-    "data": "2025-11-30"
-  },
-  {
-    "inep": "25093746",
-    "categoria": "infraestrutura",
-    "data": "2025-12-01"
-  },
-  {
-    "inep": "25093754",
-    "categoria": "manutencao",
-    "data": "2025-12-02"
-  },
-  {
-    "inep": "25094424",
-    "categoria": "manutencao",
-    "data": "2025-12-03"
-  },
-  {
-    "inep": "25094564",
-    "categoria": "ti",
-    "data": "2025-12-04"
-  },
-  {
-    "inep": "25094580",
-    "categoria": "seguranca",
-    "data": "2025-12-05"
-  },
-  {
-    "inep": "25094955",
-    "categoria": "manutencao",
-    "data": "2025-12-06"
-  },
-  {
-    "inep": "25094971",
-    "categoria": "manutencao",
-    "data": "2025-12-07"
-  },
-  {
-    "inep": "25095366",
-    "categoria": "manutencao",
-    "data": "2025-12-08"
-  },
-  {
-    "inep": "25095374",
-    "categoria": "manutencao",
-    "data": "2025-12-09"
-  },
-  {
-    "inep": "25095390",
-    "categoria": "ti",
-    "data": "2025-12-10"
-  },
-  {
-    "inep": "25095412",
-    "categoria": "alimentacao",
-    "data": "2025-12-11"
-  },
-  {
-    "inep": "25095455",
-    "categoria": "infraestrutura",
-    "data": "2025-12-12"
-  },
-  {
-    "inep": "25095463",
-    "categoria": "manutencao",
-    "data": "2025-12-13"
-  },
-  {
-    "inep": "25095501",
-    "categoria": "manutencao",
-    "data": "2025-12-14"
-  },
-  {
-    "inep": "25095528",
-    "categoria": "manutencao",
-    "data": "2025-12-15"
-  },
-  {
-    "inep": "25095544",
-    "categoria": "manutencao",
-    "data": "2025-12-16"
-  },
-  {
-    "inep": "25095560",
-    "categoria": "manutencao",
-    "data": "2025-12-17"
-  },
-  {
-    "inep": "25095595",
-    "categoria": "manutencao",
-    "data": "2025-12-18"
-  },
-  {
-    "inep": "25095609",
-    "categoria": "acesso",
-    "data": "2025-12-19"
-  },
-  {
-    "inep": "25095676",
-    "categoria": "manutencao",
-    "data": "2025-12-20"
-  },
-  {
-    "inep": "25095684",
-    "categoria": "merenda",
-    "data": "2025-12-21"
-  },
-  {
-    "inep": "25095706",
-    "categoria": "manutencao",
-    "data": "2025-12-22"
-  },
-  {
-    "inep": "25095749",
-    "categoria": "limpeza",
-    "data": "2025-12-23"
-  },
-  {
-    "inep": "25095765",
-    "categoria": "manutencao",
-    "data": "2025-12-24"
-  },
-  {
-    "inep": "25095790",
-    "categoria": "manutencao",
-    "data": "2025-12-25"
-  },
-  {
-    "inep": 25000,
-    "titulo": "Falta de Cadernos para Alunos",
-    "descricao": "A escola necessita urgentemente de cadernos para atender a demanda dos alunos.",
-    "tipo": "Material Didático",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25092570) em 2025-11-02.",
     "prioridade": "Média",
     "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-02",
+    "dataCriacao": "2025-11-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-03-ti-01",
+    "inep": "25092570",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25092570) em 2025-11-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-03",
+    "dataCriacao": "2025-11-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-03-mer-01",
+    "inep": "25092570",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25092570) em 2025-11-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-03",
+    "dataCriacao": "2025-11-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-04-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-04",
+    "dataCriacao": "2025-11-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-05-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-05",
+    "dataCriacao": "2025-11-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-06-tra-01",
+    "inep": "25092570",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25092570) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-06-inf-01",
+    "inep": "25092570",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25092570) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-07-ti-01",
+    "inep": "25092570",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25092570) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-07-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-08-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-08-inf-01",
+    "inep": "25092570",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25092570) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-09-ti-01",
+    "inep": "25092570",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25092570) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-10-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-10",
+    "dataCriacao": "2025-11-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-10-tra-01",
+    "inep": "25092570",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25092570) em 2025-11-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-10",
+    "dataCriacao": "2025-11-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-11-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-11",
+    "dataCriacao": "2025-11-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-12-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-12",
+    "dataCriacao": "2025-11-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-13-ti-01",
+    "inep": "25092570",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25092570) em 2025-11-13.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-13",
+    "dataCriacao": "2025-11-13T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-14-inf-01",
+    "inep": "25092570",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25092570) em 2025-11-14.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-14",
+    "dataCriacao": "2025-11-14T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-01-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-01.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-01",
+    "dataCriacao": "2025-11-01T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-02-tra-01",
+    "inep": "25092588",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25092588) em 2025-11-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-02",
+    "dataCriacao": "2025-11-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-03-ti-01",
+    "inep": "25092588",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25092588) em 2025-11-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-03",
+    "dataCriacao": "2025-11-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-04-inf-01",
+    "inep": "25092588",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25092588) em 2025-11-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-04",
+    "dataCriacao": "2025-11-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-05-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-05",
+    "dataCriacao": "2025-11-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-06-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-06-seg-01",
+    "inep": "25092588",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25092588) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-07-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-08-mer-01",
+    "inep": "25092588",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25092588) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-09-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-10-inf-01",
+    "inep": "25092588",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25092588) em 2025-11-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-10",
+    "dataCriacao": "2025-11-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-11-ti-01",
+    "inep": "25092588",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25092588) em 2025-11-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-11",
+    "dataCriacao": "2025-11-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-12-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-12",
+    "dataCriacao": "2025-11-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-01-man-01",
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093231) em 2025-11-01.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-01",
+    "dataCriacao": "2025-11-01T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-02-ti-01",
+    "inep": "25093231",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25093231) em 2025-11-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-02",
+    "dataCriacao": "2025-11-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-03-inf-01",
+    "inep": "25093231",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25093231) em 2025-11-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-03",
+    "dataCriacao": "2025-11-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-04-man-01",
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093231) em 2025-11-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-04",
+    "dataCriacao": "2025-11-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-05-man-01",
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093231) em 2025-11-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-05",
+    "dataCriacao": "2025-11-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-06-tra-01",
+    "inep": "25093231",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25093231) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-07-ti-01",
+    "inep": "25093231",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25093231) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-08-man-01",
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093231) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-03-man-01",
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093312) em 2025-11-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-03",
+    "dataCriacao": "2025-11-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-05-seg-01",
+    "inep": "25093312",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25093312) em 2025-11-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-05",
+    "dataCriacao": "2025-11-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-07-ti-01",
+    "inep": "25093312",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25093312) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-08-inf-01",
+    "inep": "25093312",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25093312) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-10-man-01",
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093312) em 2025-11-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-10",
+    "dataCriacao": "2025-11-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-12-man-01",
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093312) em 2025-11-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-12",
+    "dataCriacao": "2025-11-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-02-man-01",
+    "inep": "25094220",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25094220) em 2025-11-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-02",
+    "dataCriacao": "2025-11-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-06-tra-01",
+    "inep": "25094220",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25094220) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-07-ti-01",
+    "inep": "25094220",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25094220) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-09-inf-01",
+    "inep": "25094220",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25094220) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-11-man-01",
+    "inep": "25094220",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25094220) em 2025-11-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-11",
+    "dataCriacao": "2025-11-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-04-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-04",
+    "dataCriacao": "2025-11-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-05-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-05",
+    "dataCriacao": "2025-11-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-06-inf-01",
+    "inep": "25095994",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25095994) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-08-ti-01",
+    "inep": "25095994",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25095994) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-09-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-09-seg-01",
+    "inep": "25095994",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25095994) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-10-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-10",
+    "dataCriacao": "2025-11-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-11-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-11",
+    "dataCriacao": "2025-11-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096362-2025-11-01-mer-01",
+    "inep": "25096362",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25096362) em 2025-11-01.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-01",
+    "dataCriacao": "2025-11-01T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096362-2025-11-04-mer-01",
+    "inep": "25096362",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25096362) em 2025-11-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-04",
+    "dataCriacao": "2025-11-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096362-2025-11-06-mer-01",
+    "inep": "25096362",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25096362) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096362-2025-11-09-mer-01",
+    "inep": "25096362",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25096362) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25134019-2025-11-07-inf-01",
+    "inep": "25134019",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25134019) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25134019-2025-11-08-man-01",
+    "inep": "25134019",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25134019) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25134019-2025-11-09-ti-01",
+    "inep": "25134019",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25134019) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095668-2025-11-03-man-01",
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095668) em 2025-11-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-03",
+    "dataCriacao": "2025-11-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095668-2025-11-04-man-01",
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095668) em 2025-11-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-04",
+    "dataCriacao": "2025-11-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095668-2025-11-05-ti-01",
+    "inep": "25095668",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25095668) em 2025-11-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-05",
+    "dataCriacao": "2025-11-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095650-2025-11-06-man-01",
+    "inep": "25095650",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095650) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095650-2025-11-07-inf-01",
+    "inep": "25095650",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25095650) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095633-2025-11-02-tra-01",
+    "inep": "25095633",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25095633) em 2025-11-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-02",
+    "dataCriacao": "2025-11-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095633-2025-11-05-man-01",
+    "inep": "25095633",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095633) em 2025-11-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-05",
+    "dataCriacao": "2025-11-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096486-2025-11-04-man-01",
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25096486) em 2025-11-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-04",
+    "dataCriacao": "2025-11-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096486-2025-11-06-man-01",
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25096486) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096486-2025-11-08-inf-01",
+    "inep": "25096486",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25096486) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096419-2025-11-02-ti-01",
+    "inep": "25096419",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25096419) em 2025-11-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-02",
+    "dataCriacao": "2025-11-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096419-2025-11-09-man-01",
+    "inep": "25096419",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25096419) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130455-2025-11-01-man-01",
+    "inep": "25130455",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25130455) em 2025-11-01.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-01",
+    "dataCriacao": "2025-11-01T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130455-2025-11-03-seg-01",
+    "inep": "25130455",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25130455) em 2025-11-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-03",
+    "dataCriacao": "2025-11-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113186-2025-11-05-ti-01",
+    "inep": "25113186",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25113186) em 2025-11-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-05",
+    "dataCriacao": "2025-11-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113186-2025-11-06-man-01",
+    "inep": "25113186",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25113186) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113194-2025-11-07-inf-01",
+    "inep": "25113194",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25113194) em 2025-11-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-07",
+    "dataCriacao": "2025-11-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113194-2025-11-10-man-01",
+    "inep": "25113194",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25113194) em 2025-11-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-10",
+    "dataCriacao": "2025-11-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25129260-2025-11-04-man-01",
+    "inep": "25129260",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25129260) em 2025-11-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-04",
+    "dataCriacao": "2025-11-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25129260-2025-11-06-tra-01",
+    "inep": "25129260",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25129260) em 2025-11-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-06",
+    "dataCriacao": "2025-11-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130579-2025-11-02-ti-01",
+    "inep": "25130579",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25130579) em 2025-11-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-02",
+    "dataCriacao": "2025-11-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130579-2025-11-08-man-01",
+    "inep": "25130579",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25130579) em 2025-11-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-08",
+    "dataCriacao": "2025-11-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-15-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-15.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-15",
+    "dataCriacao": "2025-11-15T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-16-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-16.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-16",
+    "dataCriacao": "2025-11-16T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-17-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-17.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-17",
+    "dataCriacao": "2025-11-17T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-13-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-13.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-13",
+    "dataCriacao": "2025-11-13T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-14-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-14.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-14",
+    "dataCriacao": "2025-11-14T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-12-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-12",
+    "dataCriacao": "2025-11-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-13-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-13.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-13",
+    "dataCriacao": "2025-11-13T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-09-man-01",
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093231) em 2025-11-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-09",
+    "dataCriacao": "2025-11-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-13-man-01",
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093312) em 2025-11-13.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-13",
+    "dataCriacao": "2025-11-13T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-12-man-01",
+    "inep": "25094220",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25094220) em 2025-11-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-12",
+    "dataCriacao": "2025-11-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-18-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2025-11-18.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-18",
+    "dataCriacao": "2025-11-18T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-19-inf-01",
+    "inep": "25092570",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25092570) em 2025-11-19.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-19",
+    "dataCriacao": "2025-11-19T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-20-ti-01",
+    "inep": "25092570",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25092570) em 2025-11-20.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-20",
+    "dataCriacao": "2025-11-20T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2025-11-21-mer-01",
+    "inep": "25092570",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25092570) em 2025-11-21.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-21",
+    "dataCriacao": "2025-11-21T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-15-man-01",
+    "inep": "25092588",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092588) em 2025-11-15.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-15",
+    "dataCriacao": "2025-11-15T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-16-tra-01",
+    "inep": "25092588",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25092588) em 2025-11-16.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-16",
+    "dataCriacao": "2025-11-16T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092588-2025-11-17-seg-01",
+    "inep": "25092588",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25092588) em 2025-11-17.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-17",
+    "dataCriacao": "2025-11-17T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-16-man-01",
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093231) em 2025-11-16.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-16",
+    "dataCriacao": "2025-11-16T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-18-ti-01",
+    "inep": "25093231",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25093231) em 2025-11-18.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-18",
+    "dataCriacao": "2025-11-18T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-16-inf-01",
+    "inep": "25093312",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25093312) em 2025-11-16.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-16",
+    "dataCriacao": "2025-11-16T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-18-man-01",
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093312) em 2025-11-18.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-18",
+    "dataCriacao": "2025-11-18T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-15-man-01",
+    "inep": "25094220",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25094220) em 2025-11-15.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-15",
+    "dataCriacao": "2025-11-15T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-18-tra-01",
+    "inep": "25094220",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25094220) em 2025-11-18.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-18",
+    "dataCriacao": "2025-11-18T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-14-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-14.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-14",
+    "dataCriacao": "2025-11-14T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-15-seg-01",
+    "inep": "25095994",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25095994) em 2025-11-15.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-15",
+    "dataCriacao": "2025-11-15T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096362-2025-11-11-mer-01",
+    "inep": "25096362",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25096362) em 2025-11-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-11",
+    "dataCriacao": "2025-11-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096362-2025-11-20-ali-01",
+    "inep": "25096362",
+    "categoria": "alimentacao",
+    "tipo": "Alimentação",
+    "titulo": "Demanda de alimentação escolar",
+    "descricao": "Registro automático de alimentação para a escola (INEP 25096362) em 2025-11-20.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-20",
+    "dataCriacao": "2025-11-20T00:00:00Z"
+  },
+  {
+    "id": "chamado-25134019-2025-11-12-inf-01",
+    "inep": "25134019",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25134019) em 2025-11-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-12",
+    "dataCriacao": "2025-11-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25134019-2025-11-14-man-01",
+    "inep": "25134019",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25134019) em 2025-11-14.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-14",
+    "dataCriacao": "2025-11-14T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095668-2025-11-10-man-01",
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095668) em 2025-11-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-10",
+    "dataCriacao": "2025-11-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095668-2025-11-19-ti-01",
+    "inep": "25095668",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25095668) em 2025-11-19.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-19",
+    "dataCriacao": "2025-11-19T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095650-2025-11-11-inf-01",
+    "inep": "25095650",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25095650) em 2025-11-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-11",
+    "dataCriacao": "2025-11-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095633-2025-11-12-tra-01",
+    "inep": "25095633",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25095633) em 2025-11-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-12",
+    "dataCriacao": "2025-11-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096486-2025-11-14-man-01",
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25096486) em 2025-11-14.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-14",
+    "dataCriacao": "2025-11-14T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096419-2025-11-13-ti-01",
+    "inep": "25096419",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25096419) em 2025-11-13.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-13",
+    "dataCriacao": "2025-11-13T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130455-2025-11-18-seg-01",
+    "inep": "25130455",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25130455) em 2025-11-18.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-18",
+    "dataCriacao": "2025-11-18T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113186-2025-11-17-ti-01",
+    "inep": "25113186",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25113186) em 2025-11-17.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-17",
+    "dataCriacao": "2025-11-17T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113194-2025-11-16-inf-01",
+    "inep": "25113194",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25113194) em 2025-11-16.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-16",
+    "dataCriacao": "2025-11-16T00:00:00Z"
+  },
+  {
+    "id": "chamado-25129260-2025-11-15-man-01",
+    "inep": "25129260",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25129260) em 2025-11-15.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-15",
+    "dataCriacao": "2025-11-15T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130579-2025-11-19-man-01",
+    "inep": "25130579",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25130579) em 2025-11-19.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-19",
+    "dataCriacao": "2025-11-19T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095773-2025-11-20-ace-01",
+    "inep": "25095773",
+    "categoria": "acesso",
+    "tipo": "Acesso",
+    "titulo": "Demanda de acessibilidade",
+    "descricao": "Registro automático de acesso para a escola (INEP 25095773) em 2025-11-20.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-20",
+    "dataCriacao": "2025-11-20T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096265-2025-11-21-inf-01",
+    "inep": "25096265",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25096265) em 2025-11-21.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-21",
+    "dataCriacao": "2025-11-21T00:00:00Z"
+  },
+  {
+    "id": "chamado-25114840-2025-11-22-tra-01",
+    "inep": "25114840",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25114840) em 2025-11-22.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-22",
+    "dataCriacao": "2025-11-22T00:00:00Z"
+  },
+  {
+    "id": "chamado-25133543-2025-11-23-out-01",
+    "inep": "25133543",
+    "categoria": "outros",
+    "tipo": "Outros",
+    "titulo": "Solicitação diversa",
+    "descricao": "Registro automático de outros para a escola (INEP 25133543) em 2025-11-23.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-23",
+    "dataCriacao": "2025-11-23T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096354-2025-11-24-out-01",
+    "inep": "25096354",
+    "categoria": "outros",
+    "tipo": "Outros",
+    "titulo": "Solicitação diversa",
+    "descricao": "Registro automático de outros para a escola (INEP 25096354) em 2025-11-24.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-24",
+    "dataCriacao": "2025-11-24T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095692-2025-11-25-tra-01",
+    "inep": "25095692",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25095692) em 2025-11-25.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-25",
+    "dataCriacao": "2025-11-25T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096125-2025-11-26-man-01",
+    "inep": "25096125",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25096125) em 2025-11-26.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-26",
+    "dataCriacao": "2025-11-26T00:00:00Z"
+  },
+  {
+    "id": "chamado-25119419-2025-11-27-man-01",
+    "inep": "25119419",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25119419) em 2025-11-27.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-27",
+    "dataCriacao": "2025-11-27T00:00:00Z"
+  },
+  {
+    "id": "chamado-25127713-2025-11-28-ace-01",
+    "inep": "25127713",
+    "categoria": "acesso",
+    "tipo": "Acesso",
+    "titulo": "Demanda de acessibilidade",
+    "descricao": "Registro automático de acesso para a escola (INEP 25127713) em 2025-11-28.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-28",
+    "dataCriacao": "2025-11-28T00:00:00Z"
+  },
+  {
+    "id": "chamado-25127799-2025-11-29-tra-01",
+    "inep": "25127799",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25127799) em 2025-11-29.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-29",
+    "dataCriacao": "2025-11-29T00:00:00Z"
+  },
+  {
+    "id": "chamado-25129058-2025-11-30-seg-01",
+    "inep": "25129058",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25129058) em 2025-11-30.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-30",
+    "dataCriacao": "2025-11-30T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095480-2025-11-21-tra-01",
+    "inep": "25095480",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25095480) em 2025-11-21.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-21",
+    "dataCriacao": "2025-11-21T00:00:00Z"
+  },
+  {
+    "id": "chamado-25110330-2025-11-22-tra-01",
+    "inep": "25110330",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25110330) em 2025-11-22.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-22",
+    "dataCriacao": "2025-11-22T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095870-2025-11-23-lim-01",
+    "inep": "25095870",
+    "categoria": "limpeza",
+    "tipo": "Limpeza",
+    "titulo": "Solicitação de limpeza e higienização",
+    "descricao": "Registro automático de limpeza para a escola (INEP 25095870) em 2025-11-23.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-23",
+    "dataCriacao": "2025-11-23T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095447-2025-11-24-seg-01",
+    "inep": "25095447",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25095447) em 2025-11-24.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-24",
+    "dataCriacao": "2025-11-24T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094491-2025-11-25-ace-01",
+    "inep": "25094491",
+    "categoria": "acesso",
+    "tipo": "Acesso",
+    "titulo": "Demanda de acessibilidade",
+    "descricao": "Registro automático de acesso para a escola (INEP 25094491) em 2025-11-25.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-25",
+    "dataCriacao": "2025-11-25T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-11-26-ti-01",
+    "inep": "25093231",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25093231) em 2025-11-26.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-26",
+    "dataCriacao": "2025-11-26T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-11-27-man-01",
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093312) em 2025-11-27.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-27",
+    "dataCriacao": "2025-11-27T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-11-28-inf-01",
+    "inep": "25094220",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25094220) em 2025-11-28.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-28",
+    "dataCriacao": "2025-11-28T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-11-29-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-11-29.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-29",
+    "dataCriacao": "2025-11-29T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096362-2025-11-30-mer-01",
+    "inep": "25096362",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25096362) em 2025-11-30.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-30",
+    "dataCriacao": "2025-11-30T00:00:00Z"
+  },
+  {
+    "id": "chamado-25134019-2025-12-01-ti-01",
+    "inep": "25134019",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25134019) em 2025-12-01.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-01",
+    "dataCriacao": "2025-12-01T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095668-2025-12-02-man-01",
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095668) em 2025-12-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-02",
+    "dataCriacao": "2025-12-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095650-2025-12-03-inf-01",
+    "inep": "25095650",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25095650) em 2025-12-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-03",
+    "dataCriacao": "2025-12-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095633-2025-12-04-man-01",
+    "inep": "25095633",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095633) em 2025-12-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-04",
+    "dataCriacao": "2025-12-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096486-2025-12-05-man-01",
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25096486) em 2025-12-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-05",
+    "dataCriacao": "2025-12-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096419-2025-12-06-ti-01",
+    "inep": "25096419",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25096419) em 2025-12-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-06",
+    "dataCriacao": "2025-12-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130455-2025-12-07-man-01",
+    "inep": "25130455",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25130455) em 2025-12-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-07",
+    "dataCriacao": "2025-12-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113186-2025-12-08-ali-01",
+    "inep": "25113186",
+    "categoria": "alimentacao",
+    "tipo": "Alimentação",
+    "titulo": "Demanda de alimentação escolar",
+    "descricao": "Registro automático de alimentação para a escola (INEP 25113186) em 2025-12-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-08",
+    "dataCriacao": "2025-12-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113194-2025-12-09-man-01",
+    "inep": "25113194",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25113194) em 2025-12-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-09",
+    "dataCriacao": "2025-12-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25129260-2025-12-10-tra-01",
+    "inep": "25129260",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25129260) em 2025-12-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-10",
+    "dataCriacao": "2025-12-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130579-2025-12-11-ti-01",
+    "inep": "25130579",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25130579) em 2025-12-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-11",
+    "dataCriacao": "2025-12-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095773-2025-12-12-man-01",
+    "inep": "25095773",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095773) em 2025-12-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-12",
+    "dataCriacao": "2025-12-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096265-2025-12-13-inf-01",
+    "inep": "25096265",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25096265) em 2025-12-13.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-13",
+    "dataCriacao": "2025-12-13T00:00:00Z"
+  },
+  {
+    "id": "chamado-25114840-2025-12-14-tra-01",
+    "inep": "25114840",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25114840) em 2025-12-14.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-14",
+    "dataCriacao": "2025-12-14T00:00:00Z"
+  },
+  {
+    "id": "chamado-25133543-2025-12-15-man-01",
+    "inep": "25133543",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25133543) em 2025-12-15.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-15",
+    "dataCriacao": "2025-12-15T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096354-2025-12-16-lim-01",
+    "inep": "25096354",
+    "categoria": "limpeza",
+    "tipo": "Limpeza",
+    "titulo": "Solicitação de limpeza e higienização",
+    "descricao": "Registro automático de limpeza para a escola (INEP 25096354) em 2025-12-16.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-16",
+    "dataCriacao": "2025-12-16T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095692-2025-12-17-tra-01",
+    "inep": "25095692",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25095692) em 2025-12-17.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-17",
+    "dataCriacao": "2025-12-17T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096125-2025-12-18-man-01",
+    "inep": "25096125",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25096125) em 2025-12-18.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-18",
+    "dataCriacao": "2025-12-18T00:00:00Z"
+  },
+  {
+    "id": "chamado-25119419-2025-12-19-man-01",
+    "inep": "25119419",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25119419) em 2025-12-19.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-19",
+    "dataCriacao": "2025-12-19T00:00:00Z"
+  },
+  {
+    "id": "chamado-25127713-2025-12-20-ace-01",
+    "inep": "25127713",
+    "categoria": "acesso",
+    "tipo": "Acesso",
+    "titulo": "Demanda de acessibilidade",
+    "descricao": "Registro automático de acesso para a escola (INEP 25127713) em 2025-12-20.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-20",
+    "dataCriacao": "2025-12-20T00:00:00Z"
+  },
+  {
+    "id": "chamado-25127799-2025-12-21-tra-01",
+    "inep": "25127799",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25127799) em 2025-12-21.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-21",
+    "dataCriacao": "2025-12-21T00:00:00Z"
+  },
+  {
+    "id": "chamado-25129058-2025-12-22-seg-01",
+    "inep": "25129058",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25129058) em 2025-12-22.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-22",
+    "dataCriacao": "2025-12-22T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095480-2025-12-23-out-01",
+    "inep": "25095480",
+    "categoria": "outros",
+    "tipo": "Outros",
+    "titulo": "Solicitação diversa",
+    "descricao": "Registro automático de outros para a escola (INEP 25095480) em 2025-12-23.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-23",
+    "dataCriacao": "2025-12-23T00:00:00Z"
+  },
+  {
+    "id": "chamado-25110330-2025-12-24-tra-01",
+    "inep": "25110330",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25110330) em 2025-12-24.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-24",
+    "dataCriacao": "2025-12-24T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095870-2025-12-25-lim-01",
+    "inep": "25095870",
+    "categoria": "limpeza",
+    "tipo": "Limpeza",
+    "titulo": "Solicitação de limpeza e higienização",
+    "descricao": "Registro automático de limpeza para a escola (INEP 25095870) em 2025-12-25.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-25",
+    "dataCriacao": "2025-12-25T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095447-2025-12-26-seg-01",
+    "inep": "25095447",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25095447) em 2025-12-26.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-26",
+    "dataCriacao": "2025-12-26T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094491-2025-12-27-ace-01",
+    "inep": "25094491",
+    "categoria": "acesso",
+    "tipo": "Acesso",
+    "titulo": "Demanda de acessibilidade",
+    "descricao": "Registro automático de acesso para a escola (INEP 25094491) em 2025-12-27.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-27",
+    "dataCriacao": "2025-12-27T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093231-2025-12-28-man-01",
+    "inep": "25093231",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093231) em 2025-12-28.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-28",
+    "dataCriacao": "2025-12-28T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093312-2025-12-29-man-01",
+    "inep": "25093312",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093312) em 2025-12-29.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-29",
+    "dataCriacao": "2025-12-29T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094220-2025-12-30-inf-01",
+    "inep": "25094220",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25094220) em 2025-12-30.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-30",
+    "dataCriacao": "2025-12-30T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095994-2025-12-31-man-01",
+    "inep": "25095994",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095994) em 2025-12-31.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-31",
+    "dataCriacao": "2025-12-31T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096362-2026-01-02-mer-01",
+    "inep": "25096362",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25096362) em 2026-01-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-02",
+    "dataCriacao": "2026-01-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25134019-2026-01-03-inf-01",
+    "inep": "25134019",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25134019) em 2026-01-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-03",
+    "dataCriacao": "2026-01-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095668-2026-01-04-man-01",
+    "inep": "25095668",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095668) em 2026-01-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-04",
+    "dataCriacao": "2026-01-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095650-2026-01-05-inf-01",
+    "inep": "25095650",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25095650) em 2026-01-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-05",
+    "dataCriacao": "2026-01-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095633-2026-01-06-tra-01",
+    "inep": "25095633",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25095633) em 2026-01-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-06",
+    "dataCriacao": "2026-01-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096486-2026-01-07-man-01",
+    "inep": "25096486",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25096486) em 2026-01-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-07",
+    "dataCriacao": "2026-01-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25096419-2026-01-08-ti-01",
+    "inep": "25096419",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25096419) em 2026-01-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-08",
+    "dataCriacao": "2026-01-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130455-2026-01-09-man-01",
+    "inep": "25130455",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25130455) em 2026-01-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-09",
+    "dataCriacao": "2026-01-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113186-2026-01-10-ali-01",
+    "inep": "25113186",
+    "categoria": "alimentacao",
+    "tipo": "Alimentação",
+    "titulo": "Demanda de alimentação escolar",
+    "descricao": "Registro automático de alimentação para a escola (INEP 25113186) em 2026-01-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-10",
+    "dataCriacao": "2026-01-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25113194-2026-01-11-man-01",
+    "inep": "25113194",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25113194) em 2026-01-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-11",
+    "dataCriacao": "2026-01-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25129260-2026-01-12-tra-01",
+    "inep": "25129260",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25129260) em 2026-01-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-12",
+    "dataCriacao": "2026-01-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25130579-2026-01-13-ti-01",
+    "inep": "25130579",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25130579) em 2026-01-13.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-13",
+    "dataCriacao": "2026-01-13T00:00:00Z"
+  },
+  {
+    "id": "chamado-25092570-2026-01-14-man-01",
+    "inep": "25092570",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25092570) em 2026-01-14.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2026-01-14",
+    "dataCriacao": "2026-01-14T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093193-2025-11-18-man-01",
+    "inep": "25093193",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093193) em 2025-11-18.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-18",
+    "dataCriacao": "2025-11-18T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093207-2025-11-19-mer-01",
+    "inep": "25093207",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25093207) em 2025-11-19.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-19",
+    "dataCriacao": "2025-11-19T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093215-2025-11-20-man-01",
+    "inep": "25093215",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093215) em 2025-11-20.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-20",
+    "dataCriacao": "2025-11-20T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093240-2025-11-21-ti-01",
+    "inep": "25093240",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25093240) em 2025-11-21.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-21",
+    "dataCriacao": "2025-11-21T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093258-2025-11-22-inf-01",
+    "inep": "25093258",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25093258) em 2025-11-22.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-22",
+    "dataCriacao": "2025-11-22T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093266-2025-11-23-tra-01",
+    "inep": "25093266",
+    "categoria": "transporte",
+    "tipo": "Transporte",
+    "titulo": "Demanda de transporte escolar",
+    "descricao": "Registro automático de transporte para a escola (INEP 25093266) em 2025-11-23.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-23",
+    "dataCriacao": "2025-11-23T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093274-2025-11-24-man-01",
+    "inep": "25093274",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093274) em 2025-11-24.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-24",
+    "dataCriacao": "2025-11-24T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093282-2025-11-25-lim-01",
+    "inep": "25093282",
+    "categoria": "limpeza",
+    "tipo": "Limpeza",
+    "titulo": "Solicitação de limpeza e higienização",
+    "descricao": "Registro automático de limpeza para a escola (INEP 25093282) em 2025-11-25.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-25",
+    "dataCriacao": "2025-11-25T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093339-2025-11-26-man-01",
+    "inep": "25093339",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093339) em 2025-11-26.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-26",
+    "dataCriacao": "2025-11-26T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093347-2025-11-27-ace-01",
+    "inep": "25093347",
+    "categoria": "acesso",
+    "tipo": "Acesso",
+    "titulo": "Demanda de acessibilidade",
+    "descricao": "Registro automático de acesso para a escola (INEP 25093347) em 2025-11-27.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-27",
+    "dataCriacao": "2025-11-27T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093355-2025-11-28-man-01",
+    "inep": "25093355",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093355) em 2025-11-28.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-28",
+    "dataCriacao": "2025-11-28T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093363-2025-11-29-mer-01",
+    "inep": "25093363",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25093363) em 2025-11-29.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-29",
+    "dataCriacao": "2025-11-29T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093380-2025-11-30-man-01",
+    "inep": "25093380",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093380) em 2025-11-30.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-11-30",
+    "dataCriacao": "2025-11-30T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093746-2025-12-01-inf-01",
+    "inep": "25093746",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25093746) em 2025-12-01.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-01",
+    "dataCriacao": "2025-12-01T00:00:00Z"
+  },
+  {
+    "id": "chamado-25093754-2025-12-02-man-01",
+    "inep": "25093754",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25093754) em 2025-12-02.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-02",
+    "dataCriacao": "2025-12-02T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094424-2025-12-03-man-01",
+    "inep": "25094424",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25094424) em 2025-12-03.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-03",
+    "dataCriacao": "2025-12-03T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094564-2025-12-04-ti-01",
+    "inep": "25094564",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25094564) em 2025-12-04.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-04",
+    "dataCriacao": "2025-12-04T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094580-2025-12-05-seg-01",
+    "inep": "25094580",
+    "categoria": "seguranca",
+    "tipo": "Segurança",
+    "titulo": "Ocorrência de segurança",
+    "descricao": "Registro automático de segurança para a escola (INEP 25094580) em 2025-12-05.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-05",
+    "dataCriacao": "2025-12-05T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094955-2025-12-06-man-01",
+    "inep": "25094955",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25094955) em 2025-12-06.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-06",
+    "dataCriacao": "2025-12-06T00:00:00Z"
+  },
+  {
+    "id": "chamado-25094971-2025-12-07-man-01",
+    "inep": "25094971",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25094971) em 2025-12-07.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-07",
+    "dataCriacao": "2025-12-07T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095366-2025-12-08-man-01",
+    "inep": "25095366",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095366) em 2025-12-08.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-08",
+    "dataCriacao": "2025-12-08T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095374-2025-12-09-man-01",
+    "inep": "25095374",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095374) em 2025-12-09.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-09",
+    "dataCriacao": "2025-12-09T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095390-2025-12-10-ti-01",
+    "inep": "25095390",
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
+    "titulo": "Falha de internet ou TI",
+    "descricao": "Registro automático de comunicação e internet para a escola (INEP 25095390) em 2025-12-10.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-10",
+    "dataCriacao": "2025-12-10T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095412-2025-12-11-ali-01",
+    "inep": "25095412",
+    "categoria": "alimentacao",
+    "tipo": "Alimentação",
+    "titulo": "Demanda de alimentação escolar",
+    "descricao": "Registro automático de alimentação para a escola (INEP 25095412) em 2025-12-11.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-11",
+    "dataCriacao": "2025-12-11T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095455-2025-12-12-inf-01",
+    "inep": "25095455",
+    "categoria": "infraestrutura",
+    "tipo": "Infraestrutura",
+    "titulo": "Ocorrência de infraestrutura",
+    "descricao": "Registro automático de infraestrutura para a escola (INEP 25095455) em 2025-12-12.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-12",
+    "dataCriacao": "2025-12-12T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095463-2025-12-13-man-01",
+    "inep": "25095463",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095463) em 2025-12-13.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-13",
+    "dataCriacao": "2025-12-13T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095501-2025-12-14-man-01",
+    "inep": "25095501",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095501) em 2025-12-14.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-14",
+    "dataCriacao": "2025-12-14T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095528-2025-12-15-man-01",
+    "inep": "25095528",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095528) em 2025-12-15.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-15",
+    "dataCriacao": "2025-12-15T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095544-2025-12-16-man-01",
+    "inep": "25095544",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095544) em 2025-12-16.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-16",
+    "dataCriacao": "2025-12-16T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095560-2025-12-17-man-01",
+    "inep": "25095560",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095560) em 2025-12-17.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-17",
+    "dataCriacao": "2025-12-17T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095595-2025-12-18-man-01",
+    "inep": "25095595",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095595) em 2025-12-18.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-18",
+    "dataCriacao": "2025-12-18T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095609-2025-12-19-ace-01",
+    "inep": "25095609",
+    "categoria": "acesso",
+    "tipo": "Acesso",
+    "titulo": "Demanda de acessibilidade",
+    "descricao": "Registro automático de acesso para a escola (INEP 25095609) em 2025-12-19.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-19",
+    "dataCriacao": "2025-12-19T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095676-2025-12-20-man-01",
+    "inep": "25095676",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095676) em 2025-12-20.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-20",
+    "dataCriacao": "2025-12-20T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095684-2025-12-21-mer-01",
+    "inep": "25095684",
+    "categoria": "merenda",
+    "tipo": "Merenda",
+    "titulo": "Demanda de merenda escolar",
+    "descricao": "Registro automático de merenda para a escola (INEP 25095684) em 2025-12-21.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-21",
+    "dataCriacao": "2025-12-21T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095706-2025-12-22-man-01",
+    "inep": "25095706",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095706) em 2025-12-22.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-22",
+    "dataCriacao": "2025-12-22T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095749-2025-12-23-lim-01",
+    "inep": "25095749",
+    "categoria": "limpeza",
+    "tipo": "Limpeza",
+    "titulo": "Solicitação de limpeza e higienização",
+    "descricao": "Registro automático de limpeza para a escola (INEP 25095749) em 2025-12-23.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-23",
+    "dataCriacao": "2025-12-23T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095765-2025-12-24-man-01",
+    "inep": "25095765",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095765) em 2025-12-24.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-24",
+    "dataCriacao": "2025-12-24T00:00:00Z"
+  },
+  {
+    "id": "chamado-25095790-2025-12-25-man-01",
+    "inep": "25095790",
+    "categoria": "manutencao",
+    "tipo": "Manutenção",
+    "titulo": "Solicitação de manutenção",
+    "descricao": "Registro automático de manutenção para a escola (INEP 25095790) em 2025-12-25.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2025-12-25",
+    "dataCriacao": "2025-12-25T00:00:00Z"
+  },
+  {
+    "id": "chamado-25000-2024-10-27-mat-01",
+    "inep": 25000,
+    "categoria": "material_didatico",
+    "tipo": "Material Didático",
+    "titulo": "Falta de Cadernos para Alunos",
+    "descricao": "A escola necessita urgentemente de cadernos para atender a demanda dos alunos.",
+    "prioridade": "Média",
+    "status": "Aguardando Confirmação da Escola",
+    "data": "2024-10-27",
     "dataCriacao": "2024-10-27T12:34:56Z"
   },
   {
     "id": "chamado-mhr8q4js-3ip",
     "inep": 25000,
+    "categoria": "ti",
+    "tipo": "Comunicação e Internet",
     "titulo": "Falta de internet prejudica uso de tablets",
     "descricao": "A falta de conexão com a internet na escola está impactando negativamente a utilização dos tablets durante as aulas, impedindo o acesso a recursos online e atividades pedagógicas que dependem da internet.",
-    "tipo": "Comunicação e Internet",
     "prioridade": "Média",
     "status": "Aguardando Confirmação da Escola",
+    "data": "2024-10-27",
     "dataCriacao": "2024-10-27T12:34:56Z"
   }
 ]
