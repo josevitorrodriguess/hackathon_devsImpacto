@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const highlightMetrics = [
   { label: "Escolas monitoradas", value: "1.238" },
   { label: "Relatórios enviados", value: "6.912" },
@@ -26,6 +30,15 @@ const mockData = [
 ];
 
 export default function Home() {
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+
+  const handleLoginOption = (type: "escola" | "secretaria") => {
+    // Aqui você pode redirecionar para a página de login específica
+    console.log(`Login como: ${type}`);
+    setIsLoginModalOpen(false);
+    // Exemplo: router.push(`/login/${type}`);
+  };
+
   return (
     <div className="min-h-screen bg-brand-50 font-sans text-slate-900">
       <header className="sticky top-0 z-10 border-b border-brand-100 bg-white/90 backdrop-blur">
@@ -35,11 +48,11 @@ export default function Home() {
               EC
             </div>
             <div>
-              <p className="text-lg font-semibold text-brand-700">
-                EduConecta
+              <p className="text-2xl font-bold text-brand-700">
+                GIDE
               </p>
               <p className="text-xs text-slate-500">
-                Comunicação Educação-PB
+              Gestão Integrada de Demandas Escolares.
               </p>
             </div>
           </div>
@@ -54,13 +67,80 @@ export default function Home() {
               Contato
             </a>
           </nav>
-          <div className="flex gap-3">
-            <button className="rounded-full border border-brand-600 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:bg-brand-50">
-              Login Escolas
+          <div className="relative">
+            <button
+              onClick={() => setIsLoginModalOpen(!isLoginModalOpen)}
+              className="rounded-full bg-brand-600 px-6 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700"
+            >
+              Entrar
             </button>
-            <button className="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700">
-              Login Secretaria
-            </button>
+
+            {/* Modal de Login */}
+            {isLoginModalOpen && (
+              <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-brand-100 bg-white p-4 shadow-2xl">
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Escolha o tipo de acesso
+                  </p>
+                  <div className="flex flex-col gap-2">
+                    <button
+                      onClick={() => handleLoginOption("escola")}
+                      className="flex items-center gap-3 rounded-xl border border-brand-100 bg-brand-50/50 p-4 text-left transition hover:bg-brand-100 hover:shadow-md"
+                    >
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 text-white">
+                        <svg
+                          className="h-5 w-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-900">
+                          Login Escolas
+                        </p>
+                        <p className="text-xs text-slate-500">
+                          Acesso para escolas municipais
+                        </p>
+                      </div>
+                    </button>
+                    <button
+                      onClick={() => handleLoginOption("secretaria")}
+                      className="flex items-center gap-3 rounded-xl border border-brand-100 bg-brand-50/50 p-4 text-left transition hover:bg-brand-100 hover:shadow-md"
+                    >
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 text-white">
+                        <svg
+                          className="h-5 w-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-900">
+                          Login Secretaria
+                        </p>
+                        <p className="text-xs text-slate-500">
+                          Acesso para gestores
+                        </p>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+            )}
           </div>
         </div>
       </header>
