@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 import Link from "next/link";
-import escolasData from "@/data/escolas_limpo.json";
+import escolasData from "@/data/escolas.json";
 
 const monitoramentos = [
   { titulo: "Programa Alimenta Escola", progresso: 78, risco: "Baixo", resumo: "Contratos com fornecedores revisados e vigentes." },
@@ -22,13 +22,13 @@ export default function SecretariaPage() {
   /** Processa os dados das escolas do JSON, filtrando apenas as que têm coordenadas válidas */
   const escolas = useMemo(() => {
     return escolasData
-      .filter((escola) => escola.Latitude != null && escola.Longitude != null)
+      .filter((escola) => escola.latitude != null && escola.longitude != null)
       .map((escola, index) => ({
-        id: escola["Código INEP"] || `escola-${index}`,
-        nome: escola["Nome da escola"],
-        pos: { lat: escola.Latitude, lng: escola.Longitude },
-        endereco: escola["Endereço"],
-        codigoINEP: escola["Código INEP"],
+        id: escola["inep"] || `escola-${index}`,
+        nome: escola["nome_escola"],
+        pos: { lat: escola.latitude, lng: escola.longitude },
+        endereco: escola["endereco"],
+        codigoINEP: escola["inep"],
       }));
   }, []);
 
